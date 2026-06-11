@@ -30,7 +30,7 @@ def load_config():
 
 BINANCE_INTERVAL_MAP = {"1d": "1d", "4h": "4h", "1h": "1h"}
 
-def fetch_binance(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame | None:
+def fetch_binance(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame:
     interval = BINANCE_INTERVAL_MAP.get(tf)
     if not interval:
         return None
@@ -58,7 +58,7 @@ def fetch_binance(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame | None
 
 # ---------- Yahoo Finance ----------
 
-def fetch_yahoo(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame | None:
+def fetch_yahoo(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame:
     try:
         import yfinance as yf
     except ImportError:
@@ -83,6 +83,10 @@ def fetch_yahoo(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame | None:
 
     if raw is None or raw.empty:
         return None
+
+    # yfinance pode retornar MultiIndex de colunas (ticker como nível superior)
+    if isinstance(raw.columns, pd.MultiIndex):
+        raw.columns = raw.columns.get_level_values(0)
 
     df = raw.reset_index()
     # normaliza nome da coluna de timestamp
@@ -112,7 +116,7 @@ def fetch_yahoo(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame | None:
 
 # ---------- Fallback Stooq (apenas D1) ----------
 
-def fetch_stooq(ticker: str) -> pd.DataFrame | None:
+def fetch_stooq(ticker: str) -> pd.DataFrame:
     # Stooq usa tickers próprios; faz melhor esforço
     stooq_ticker = ticker.lower().replace("=f", ".f").replace("=", "")
     url = STOOQ_BASE
@@ -153,6 +157,12 @@ def check_staleness(df: pd.DataFrame, tf: str, ticker: str) -> bool:
     now = pd.Timestamp.utcnow()
     delta = now - last
     is_cripto = any(c in ticker for c in ["BTC", "ETH", "USDT"])
+    # D1 fecha à meia-noite; tolerar até 48h é normal
+    if tf == "1d":
+        if delta > timedelta(hours=48):
+            print(f"  [AVISO] {ticker} {tf}: dados velhos ({delta}). Não analisar.")
+            return True
+        return False
     if is_cripto and delta > timedelta(hours=2):
         print(f"  [AVISO] {ticker} {tf}: dados velhos ({delta}). Não analisar.")
         return True
