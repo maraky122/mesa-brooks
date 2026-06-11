@@ -28,7 +28,9 @@ jobs:
         run: pip install pandas yfinance requests pyyaml
 
       - name: Run fetch
-        run: python scripts/fetch_data.py
+        # exit code 1 indica falhas parciais — ainda assim commitamos o que veio;
+        # o fetch_summary.txt registra as falhas para o agente declarar na sessão
+        run: python scripts/fetch_data.py || echo "::warning::fetch com falhas parciais (ver fetch_summary.txt)"
 
       - name: Commit & push CSVs
         run: |
