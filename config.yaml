@@ -1,0 +1,49 @@
+ativos:
+  cripto:
+    - ticker: BTCUSDT
+      fonte: binance
+      nome: Bitcoin
+    - ticker: ETHUSDT
+      fonte: binance
+      nome: Ethereum
+
+  acoes_etfs:
+    - ticker: SPY
+      fonte: yahoo
+      nome: S&P 500 ETF
+    - ticker: QQQ
+      fonte: yahoo
+      nome: Nasdaq ETF
+    - ticker: NVDA
+      fonte: yahoo
+      nome: NVIDIA
+
+  commodities:
+    - ticker: "GC=F"
+      fonte: yahoo
+      nome: Ouro
+    - ticker: "SI=F"
+      fonte: yahoo
+      nome: Prata
+    - ticker: "CL=F"
+      fonte: yahoo
+      nome: Petróleo WTI
+
+contexto_mercado:
+  ticker: "ES=F"
+  fonte: yahoo
+  nome: S&P 500 Futuro
+
+timeframes:
+  - 1d
+  - 4h
+  - 1h
+
+barras_historico: 200
+
+plano:
+  fase: 1             # 1 = paper trading | 2 = live
+  saldo_usd: 200
+  risco_pct: 1.0      # % do saldo por trade
+
+email_destino: ""     # preencha com seu e-mail para receber relatórios
