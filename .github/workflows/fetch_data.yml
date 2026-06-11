@@ -1,0 +1,40 @@
+name: Fetch Market Data
+
+on:
+  schedule:
+    # Roda às 13:00 UTC (antes da abertura de NY às 13:30)
+    - cron: "0 13 * * 1-5"
+    # Segunda rodada às 21:30 UTC (após fechamento de NY)
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: # permite rodar manualmente pelo GitHub
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas yfinance requests pyyaml
+
+      - name: Run fetch
+        run: python scripts/fetch_data.py
+
+      - name: Commit & push CSVs
+        run: |
+          git config user.name  "mesa-brooks-bot"
+          git config user.email "bot@mesa-brooks"
+          git add data/ohlc/ data/fetch_summary.txt
+          git diff --cached --quiet && echo "Sem dados novos." || \
+            git commit -m "data: atualização automática de dados OHLC $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
