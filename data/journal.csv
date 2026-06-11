@@ -1,1 +1,3 @@
 id,data,ativo,timeframe,setup,direcao,entrada,stop,alvo,r_planejado,r_realizado,seguiu_plano,nota
+1,2026-06-11,GC=F,1h,Pullback com Tendência,VENDA,4100.10,4117.00,4074.50,1.5,1.5,sim,alvo atingido 14:00 UTC (L 4072.80) antes da reversão em V
+2,2026-06-11,SI=F,1h,Pullback com Tendência,VENDA,63.985,64.350,63.435,1.5,1.5,sim,alvo atingido 12:00 UTC (L 62.895) antes da reversão em V
