@@ -17,7 +17,12 @@ ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data" / "ohlc"
 CONFIG_FILE = ROOT / "config.yaml"
 
-BINANCE_BASE = "https://api.binance.com"
+# data-api.binance.vision: endpoint público de market data, acessível de
+# regiões onde api.binance.com responde 451 (ex.: runners do GitHub nos EUA)
+BINANCE_BASES = [
+    "https://api.binance.com",
+    "https://data-api.binance.vision",
+]
 STOOQ_BASE = "https://stooq.com/q/d/l/"
 
 
@@ -34,14 +39,17 @@ def fetch_binance(ticker: str, tf: str, limit: int = 200) -> pd.DataFrame:
     interval = BINANCE_INTERVAL_MAP.get(tf)
     if not interval:
         return None
-    url = f"{BINANCE_BASE}/api/v3/klines"
     params = {"symbol": ticker, "interval": interval, "limit": limit}
-    try:
-        r = requests.get(url, params=params, timeout=15)
-        r.raise_for_status()
-        raw = r.json()
-    except Exception as e:
-        print(f"  [ERRO Binance] {ticker} {tf}: {e}")
+    raw = None
+    for base in BINANCE_BASES:
+        try:
+            r = requests.get(f"{base}/api/v3/klines", params=params, timeout=15)
+            r.raise_for_status()
+            raw = r.json()
+            break
+        except Exception as e:
+            print(f"  [ERRO Binance] {ticker} {tf} via {base}: {e}")
+    if raw is None:
         return None
 
     cols = ["timestamp", "open", "high", "low", "close", "volume",
@@ -154,7 +162,7 @@ def check_staleness(df: pd.DataFrame, tf: str, ticker: str) -> bool:
     if df is None or df.empty:
         return True
     last = df["timestamp"].max()
-    now = pd.Timestamp.utcnow()
+    now = pd.Timestamp.now("UTC")
     delta = now - last
     is_cripto = any(c in ticker for c in ["BTC", "ETH", "USDT"])
     # D1 fecha à meia-noite; tolerar até 48h é normal
