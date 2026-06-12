@@ -35,10 +35,12 @@ def nome_amigavel(ticker: str) -> str:
 
 
 def substitui_tickers(texto: str) -> str:
-    """Troca menções de tickers por 'Nome (TICKER)' fora de tabelas/código."""
+    """Troca menções de tickers por nomes amigáveis, exceto quando já seguidos de ' ('."""
     for ticker, nome in NOMES.items():
-        # evita substituir quando já está no formato Nome (TICKER)
-        padrao = re.compile(rf"(?<![\w(]){re.escape(ticker)}(?![\w)])")
+        # não substitui se o ticker já está acompanhado de seu nome em parênteses
+        padrao = re.compile(
+            rf"(?<![\w(]){re.escape(ticker)}(?![\w)]| \()"
+        )
         texto = padrao.sub(nome, texto)
     return texto
 

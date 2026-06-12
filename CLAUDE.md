@@ -16,6 +16,7 @@ A pasta `knowledge/` contém o destilado operacional do método (índice em `kno
 - Leia `data/fetch_summary.txt`. Se houver falhas ou avisos de dados velhos, **declare no topo do relatório** e não analise o ativo afetado.
 - Critério de staleness: cripto > 2h desde o último timestamp → não analisar. Ações/futuros > 1 pregão → não analisar.
 - **Regra absoluta: nunca invente dados. Dado ausente = ativo pulado com registro da razão.**
+- Se `data/suspended_setups.txt` existir, leia e liste os setups suspensos no cabeçalho — não emita SINAL com esses setups.
 
 ### 1b. Calendário econômico (obrigatório antes de qualquer sinal)
 - Leia `data/calendar.json` (eventos de impacto ALTO e MÉDIO da semana, fonte ForexFactory)
@@ -161,8 +162,9 @@ Disciplina de mesa profissional — **nenhum sinal sai sem conferência contra o
 ## Memória do sistema
 
 - Setups anteriores são registrados em `data/journal.csv`
-- A revisão de domingo lê o journal e calcula expectância por setup
-- Se um setup acumular expectância negativa com 20+ ocorrências, ele deve ser suspenso e uma nota deve aparecer no cabeçalho de todas as sessões seguintes
+- A revisão de domingo roda `python scripts/weekly_review.py` — calcula expectância por setup e salva `data/suspended_setups.txt` se necessário
+- **No início de cada sessão:** verifique se `data/suspended_setups.txt` existe. Se existir, liste os setups suspensos no cabeçalho do relatório e não emita SINAL para eles
+- Se um setup acumular expectância negativa com 20+ ocorrências, é suspenso automaticamente pelo script — respeite a suspensão
 
 ---
 

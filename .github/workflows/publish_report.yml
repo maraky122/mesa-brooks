@@ -55,8 +55,25 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate latest report prices
+        run: |
+          latest=$(ls -1 reports/*.md 2>/dev/null | grep -v weekly-review | sort | tail -1)
+          if [ -z "$latest" ]; then
+            echo "Nenhum relatório encontrado — pulando validação."
+            exit 0
+          fi
+          echo "Validando: $latest"
+          python3 scripts/validate_report.py "$latest"
+
   email:
     runs-on: ubuntu-latest
+    needs: [build-site, validate]
     # só roda se os secrets de SMTP estiverem configurados
     steps:
       - name: Checkout
@@ -90,10 +107,8 @@ jobs:
         run: python3 scripts/render_email.py "${{ steps.latest.outputs.file }}" email.html
 
       - name: Send email
-        if: ${{ env.MAIL_USERNAME != '' }}
+        if: ${{ secrets.MAIL_USERNAME != '' }}
         uses: dawidd6/action-send-mail@v3
-        env:
-          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
         with:
           server_address: smtp.gmail.com
           server_port: 465

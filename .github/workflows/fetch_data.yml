@@ -9,6 +9,7 @@ on:
     - cron: "0 18 * * 1-5"   # tendência da tarde + FOMC
     - cron: "30 21 * * 1-5"  # fechamento, D1 fechado, journal
     - cron: "0 13 * * 0,6"   # cobertura de cripto no fim de semana
+    - cron: "0 14 * * 0"    # domingo 11:00 BRT — revisão semanal automática
   workflow_dispatch: # permite rodar manualmente pelo GitHub
 
 jobs:
@@ -28,7 +29,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pandas yfinance requests pyyaml
+        run: pip install pandas yfinance requests pyyaml mplfinance
 
       - name: Run fetch
         # exit code 1 indica falhas parciais — ainda assim commitamos o que veio;
@@ -38,10 +39,20 @@ jobs:
       - name: Fetch economic calendar
         run: python scripts/fetch_calendar.py
 
+      - name: Generate charts
+        run: python scripts/charts.py || echo "::warning::charts.py falhou (ignorado)"
+
+      - name: Weekly review (domingos)
+        run: |
+          if [ "$(date -u +%u)" = "7" ]; then
+            python scripts/weekly_review.py
+          fi
+
       - name: Commit & push CSVs
         run: |
           git config user.name  "mesa-brooks-bot"
           git config user.email "bot@mesa-brooks"
+          git add data/ohlc/ data/fetch_summary.txt data/calendar.json reports/img/ reports/weekly-review-*.md data/suspended_setups.txt 2>/dev/null || true
           git add data/ohlc/ data/fetch_summary.txt data/calendar.json
           git diff --cached --quiet && echo "Sem dados novos." || \
             git commit -m "data: atualização automática de dados OHLC $(date -u +'%Y-%m-%d %H:%M UTC')"
