@@ -114,6 +114,7 @@ KV_LABELS = {
     "Stop": "Stop (proteção)",
     "Alvo": "Alvo (objetivo)",
     "Trader's Equation": "Equação do Trader",
+    "⚠️ Calendário": "⚠️ Alerta de calendário",
 }
 
 

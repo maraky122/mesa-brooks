@@ -35,11 +35,14 @@ jobs:
         # o fetch_summary.txt registra as falhas para o agente declarar na sessão
         run: python scripts/fetch_data.py || echo "::warning::fetch com falhas parciais (ver fetch_summary.txt)"
 
+      - name: Fetch economic calendar
+        run: python scripts/fetch_calendar.py
+
       - name: Commit & push CSVs
         run: |
           git config user.name  "mesa-brooks-bot"
           git config user.email "bot@mesa-brooks"
-          git add data/ohlc/ data/fetch_summary.txt
+          git add data/ohlc/ data/fetch_summary.txt data/calendar.json
           git diff --cached --quiet && echo "Sem dados novos." || \
             git commit -m "data: atualização automática de dados OHLC $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push

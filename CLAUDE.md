@@ -17,6 +17,14 @@ A pasta `knowledge/` contém o destilado operacional do método (índice em `kno
 - Critério de staleness: cripto > 2h desde o último timestamp → não analisar. Ações/futuros > 1 pregão → não analisar.
 - **Regra absoluta: nunca invente dados. Dado ausente = ativo pulado com registro da razão.**
 
+### 1b. Calendário econômico (obrigatório antes de qualquer sinal)
+- Leia `data/calendar.json` (eventos de impacto ALTO e MÉDIO da semana, fonte ForexFactory)
+- Identifique eventos de impacto **ALTO** nas **próximas 24h** a partir da hora da análise
+- Se houver, inclua a seção **⚠️ Alerta de calendário** no cabeçalho do relatório (formato abaixo) listando evento, horário UTC e BRT
+- Em todo cartão de SINAL emitido com evento ALTO nas próximas 24h, adicione a linha `**⚠️ Calendário:**` com o(s) evento(s) e o aviso de que a probabilidade estimada pode ser afetada pela volatilidade do evento
+- **O alerta não bloqueia o sinal** — apenas sinaliza o risco. Exceção: nos 30 minutos ao redor de um evento ALTO, a entrada vira "gatilho armado" (esperar o evento passar)
+- Se `calendar.json` estiver ausente ou velho (> 7 dias), declare no cabeçalho e siga sem o alerta
+
 ### 2. Contexto de mercado (sempre primeiro)
 Leia ES=F (ou SPY) no D1 e H4 — critérios em `knowledge/01-controle-do-mercado.md`:
 - Qual é o always-in atual? (comprado / vendido) — avalie pelos 8 fatores de controle
@@ -81,6 +89,11 @@ Contexto ES=F: [always-in D1] | [posição vs EMA 20] | [nível mais próximo]
 Fetch: [OK / FALHAS: lista]
 ```
 
+Se houver evento de impacto ALTO nas próximas 24h (`data/calendar.json`), adicione logo abaixo do cabeçalho:
+```
+**⚠️ Alerta de calendário:** {evento} ({moeda}) — {data} {hora} UTC ({hora} BRT). Volatilidade elevada esperada em torno do evento; a probabilidade dos sinais pode ser afetada.
+```
+
 ### Cartão de SINAL
 ```
 ## SINAL — {ATIVO} {TIMEFRAME}
@@ -91,6 +104,7 @@ Fetch: [OK / FALHAS: lista]
 **Stop:** {preço exato} ({distância em % e em R})
 **Alvo:** {preço exato} ({R planejado})
 **Trader's Equation:** P={%} × {R_alvo}R > {1-P} × {R_stop}R → {FAVORÁVEL/DESFAVORÁVEL}
+**⚠️ Calendário:** {evento ALTO nas próximas 24h + horário UTC/BRT — omitir a linha se não houver}
 
 ### Lógica Brooks
 [3-5 linhas: contexto D1 → ciclo H4 → signal bar H1]
