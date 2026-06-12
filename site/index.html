@@ -72,6 +72,20 @@ const list = document.getElementById('list');
 const content = document.getElementById('content');
 const back = document.getElementById('back');
 
+const NOMES = {
+  'GC=F': 'Ouro', 'SI=F': 'Prata', 'CL=F': 'Petróleo WTI',
+  'ES=F': 'S&P 500 (Futuros)', 'BTCUSDT': 'Bitcoin', 'ETHUSDT': 'Ethereum',
+  'SPY': 'S&P 500 (ETF SPY)', 'QQQ': 'Nasdaq (ETF QQQ)', 'NVDA': 'NVIDIA'
+};
+
+function nomesAmigaveis(texto) {
+  for (const [ticker, nome] of Object.entries(NOMES)) {
+    const re = new RegExp('(?<![\\w(])' + ticker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w)])', 'g');
+    texto = texto.replace(re, nome);
+  }
+  return texto;
+}
+
 function fmtDate(name) {
   // 2026-06-11-2334.md → 11/06/2026 23:34 UTC
   const m = name.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})/);
@@ -85,7 +99,7 @@ async function init() {
     list.innerHTML = idx.map(r => `
       <div class="report-card" onclick="openReport('${r.file}')">
         <div class="date">${fmtDate(r.file)}</div>
-        <div class="meta">${r.preview}</div>
+        <div class="meta">${nomesAmigaveis(r.preview)}</div>
         <span class="badge ${r.sinais > 0 ? 'sinal' : 'semtrade'}">
           ${r.sinais > 0 ? r.sinais + ' SINAL' + (r.sinais > 1 ? 'IS' : '') : 'Sem trade'}
         </span>
@@ -97,7 +111,7 @@ async function init() {
 
 async function openReport(file) {
   const md = await (await fetch('reports/' + file)).text();
-  content.innerHTML = marked.parse(md);
+  content.innerHTML = marked.parse(nomesAmigaveis(md));
   list.style.display = 'none';
   content.style.display = 'block';
   back.style.display = 'block';
