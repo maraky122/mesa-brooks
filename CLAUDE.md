@@ -86,7 +86,8 @@ Fetch: [OK / FALHAS: lista]
 ## SINAL — {ATIVO} {TIMEFRAME}
 **Setup:** [nome do setup]
 **Direção:** COMPRA / VENDA
-**Entrada:** {preço exato}
+**Preço atual:** {último fechamento H1 exato do CSV} (barra de {data/hora UTC})
+**Entrada:** {preço exato} ({distância do preço atual em % e em R})
 **Stop:** {preço exato} ({distância em % e em R})
 **Alvo:** {preço exato} ({R planejado})
 **Trader's Equation:** P={%} × {R_alvo}R > {1-P} × {R_stop}R → {FAVORÁVEL/DESFAVORÁVEL}
@@ -112,10 +113,24 @@ Fetch: [OK / FALHAS: lista]
 
 ---
 
+## Validação de preços (obrigatória antes de publicar)
+
+Disciplina de mesa profissional — **nenhum sinal sai sem conferência contra o preço real**:
+
+1. O campo **Preço atual** do cartão deve ser copiado do último fechamento H1 do CSV (`data/ohlc/{TICKER}_1h.csv`), nunca arredondado nem estimado, com o timestamp da barra
+2. Rode `python scripts/validate_report.py reports/{arquivo}.md` — o script confere:
+   - Preço atual = último fechamento real (tolerância 0.2%)
+   - Dado fresco (cripto ≤ 2h; demais ≤ 26h)
+   - COMPRA: stop < entrada < alvo | VENDA: alvo < entrada < stop
+   - Retorno ≥ risco (Trader's Equation mínima)
+   - Entrada executável: a ≤ 1R do preço atual e não ultrapassada em > 0.25R (entrada perdida = sinal inválido)
+3. **Se o validador falhar, corrija o cartão ou rebaixe para SEM TRADE.** Não publique relatório com FAIL.
+
 ## Publicação do relatório (obrigatório ao fim de cada sessão)
 
 1. Salve o relatório completo em `reports/AAAA-MM-DD-HHMM.md` (UTC)
-2. Commite e faça push — o workflow `publish_report.yml` envia o e-mail para `email_destino` e atualiza o site (GitHub Pages)
+2. Rode o validador de preços (seção acima) — só prossiga com PASS
+3. Commite e faça push — o workflow `publish_report.yml` envia o e-mail para `email_destino` e atualiza o site (GitHub Pages)
 
 ---
 

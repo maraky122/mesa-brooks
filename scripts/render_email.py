@@ -108,6 +108,7 @@ def parse_kv(corpo: list[str]) -> tuple[dict, list[str]]:
 
 KV_LABELS = {
     "Setup": "Estratégia",
+    "Preço atual": "Preço no momento da análise",
     "Direção": "Direção",
     "Entrada": "Preço de entrada",
     "Stop": "Stop (proteção)",
