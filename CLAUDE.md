@@ -112,6 +112,13 @@ Fetch: [OK / FALHAS: lista]
 
 ---
 
+## Publicação do relatório (obrigatório ao fim de cada sessão)
+
+1. Salve o relatório completo em `reports/AAAA-MM-DD-HHMM.md` (UTC)
+2. Commite e faça push — o workflow `publish_report.yml` envia o e-mail para `email_destino` e atualiza o site (GitHub Pages)
+
+---
+
 ## Gates de risco (invioláveis)
 
 1. **Máximo 2 cartões de SINAL por sessão** — se 3 setups se formarem simultaneamente, priorize o de maior R esperado e documente os demais como "não priorizados"
