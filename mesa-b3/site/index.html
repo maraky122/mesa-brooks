@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1117">
+<title>Mesa B3</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #2ea043;
+    --green: #3fb950; --red: #f85149;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+  }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg); border-bottom: 1px solid var(--border);
+    padding: 14px 16px; display: flex; align-items: center; gap: 10px;
+  }
+  header h1 { font-size: 18px; font-weight: 700; }
+  header h1 span { color: var(--accent); }
+  #back { display: none; background: none; border: 1px solid var(--border);
+    color: var(--text); border-radius: 8px; padding: 6px 12px; font-size: 14px; }
+  main { max-width: 720px; margin: 0 auto; padding: 16px; }
+  .report-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px; margin-bottom: 12px; cursor: pointer; transition: border-color .15s;
+  }
+  .report-card:active { border-color: var(--accent); }
+  .report-card .date { font-size: 17px; font-weight: 600; }
+  .report-card .meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; border-radius: 999px;
+    padding: 2px 10px; margin-top: 8px; }
+  .badge.oportunidade { background: rgba(46,160,67,.15); color: var(--green); }
+  .badge.aguardar { background: rgba(139,148,158,.15); color: var(--muted); }
+  #content { display: none; }
+  #content h1 { font-size: 20px; margin: 16px 0 8px; color: var(--accent); }
+  #content h2 { font-size: 17px; margin: 20px 0 8px; padding-top: 12px;
+    border-top: 1px solid var(--border); }
+  #content h3 { font-size: 15px; margin: 14px 0 6px; }
+  #content p, #content ul { margin: 8px 0; }
+  #content li { margin-left: 18px; }
+  #content strong { color: var(--accent); }
+  #content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+  #content table { width: 100%; border-collapse: collapse; font-size: 13px;
+    display: block; overflow-x: auto; margin: 10px 0; }
+  #content th, #content td { border: 1px solid var(--border); padding: 6px 8px;
+    text-align: left; white-space: nowrap; }
+  #content th { background: var(--card); }
+  #content code { background: var(--card); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  .loading, .empty { color: var(--muted); text-align: center; padding: 40px 0; }
+</style>
+</head>
+<body>
+<header>
+  <button id="back" onclick="showList()">‹ Voltar</button>
+  <h1>Mesa <span>B3</span></h1>
+</header>
+<main>
+  <div id="list"><p class="loading">Carregando relatórios…</p></div>
+  <article id="content"></article>
+</main>
+<script>
+const list = document.getElementById('list');
+const content = document.getElementById('content');
+const back = document.getElementById('back');
+
+const NOMES = {
+  'BOVA11': 'iShares Ibovespa (BOVA11)', 'AUVP11': 'AUVP Capital (AUVP11)',
+  'HASH11': 'Hashdex Cripto (HASH11)', 'IVVB11': 'iShares S&P 500 (IVVB11)',
+  'MXRF11': 'Maxi Renda (MXRF11)', 'HGLG11': 'CSHG Logística (HGLG11)',
+  'KNRI11': 'Kinea Renda (KNRI11)', 'XPML11': 'XP Malls (XPML11)',
+  'BTLG11': 'BTG Logística (BTLG11)', 'ITUB4': 'Itaú Unibanco (ITUB4)',
+  'BBAS3': 'Banco do Brasil (BBAS3)', 'BPAC11': 'BTG Pactual (BPAC11)',
+  'WEGE3': 'WEG (WEGE3)', 'ABEV3': 'Ambev (ABEV3)', 'EGIE3': 'Engie Brasil (EGIE3)',
+  'TAEE11': 'Taesa (TAEE11)', 'BBSE3': 'BB Seguridade (BBSE3)', '^BVSP': 'Ibovespa'
+};
+
+function nomesAmigaveis(texto) {
+  for (const [ticker, nome] of Object.entries(NOMES)) {
+    const re = new RegExp('(?<![\\w(])' + ticker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w)]| \\()', 'g');
+    texto = texto.replace(re, nome);
+  }
+  return texto;
+}
+
+function fmtDate(name) {
+  const m = name.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})/);
+  if (!m) return name;
+  let brt = parseInt(m[4]) * 60 + parseInt(m[5]) - 180;
+  if (brt < 0) brt += 1440;
+  const bh = String(Math.floor(brt / 60)).padStart(2, '0');
+  const bm = String(brt % 60).padStart(2, '0');
+  return `${m[3]}/${m[2]}/${m[1]} ${bh}:${bm} BRT`;
+}
+
+async function init() {
+  try {
+    const idx = await (await fetch('reports.json?_=' + Date.now())).json();
+    if (!idx.length) { list.innerHTML = '<p class="empty">Nenhum relatório ainda.</p>'; return; }
+    list.innerHTML = idx.map(r => `
+      <div class="report-card" onclick="openReport('${r.file}')">
+        <div class="date">${fmtDate(r.file)}</div>
+        <div class="meta">${nomesAmigaveis(r.preview)}</div>
+        <span class="badge ${r.oportunidades > 0 ? 'oportunidade' : 'aguardar'}">
+          ${r.oportunidades > 0 ? '🛒 ' + r.oportunidades + ' OPORTUNIDADE' + (r.oportunidades > 1 ? 'S' : '') : 'Aguardar'}
+        </span>
+      </div>`).join('');
+  } catch (e) {
+    list.innerHTML = '<p class="empty">Erro ao carregar índice.</p>';
+  }
+}
+
+async function openReport(file) {
+  const md = await (await fetch('reports/' + file)).text();
+  content.innerHTML = marked.parse(nomesAmigaveis(md));
+  list.style.display = 'none';
+  content.style.display = 'block';
+  back.style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+function showList() {
+  content.style.display = 'none';
+  list.style.display = 'block';
+  back.style.display = 'none';
+}
+
+init();
+</script>
+</body>
+</html>

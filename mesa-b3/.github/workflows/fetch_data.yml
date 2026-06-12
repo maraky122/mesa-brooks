@@ -1,0 +1,38 @@
+name: Fetch Market Data B3
+
+on:
+  schedule:
+    # B3 opera 10:00–17:55 BRT (13:00–20:55 UTC), seg–sex
+    - cron: "30 13 * * 1-5"  # 10:30 BRT — pós-abertura
+    - cron: "0 17 * * 1-5"   # 14:00 BRT — meio do pregão
+    - cron: "30 21 * * 1-5"  # 18:30 BRT — pós-fechamento (D1 fechado)
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas yfinance pyyaml
+
+      - name: Run fetch
+        run: python scripts/fetch_data.py || echo "::warning::fetch com falhas parciais (ver fetch_summary.txt)"
+
+      - name: Commit & push CSVs
+        run: |
+          git config user.name  "mesa-b3-bot"
+          git config user.email "bot@mesa-b3"
+          git add data/ohlc/ data/fetch_summary.txt
+          git diff --cached --quiet && echo "Sem dados novos." || \
+            git commit -m "data: atualização automática OHLC B3 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

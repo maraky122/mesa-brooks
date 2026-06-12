@@ -1,0 +1,117 @@
+name: Publish Report B3
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "reports/**"
+      - "site/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build static site
+        run: |
+          mkdir -p _site/reports
+          cp site/index.html _site/
+          cp reports/*.md _site/reports/ 2>/dev/null || true
+          python3 - <<'EOF'
+          import json, re
+          from pathlib import Path
+          items = []
+          for f in sorted(Path("reports").glob("*.md"), reverse=True):
+              text = f.read_text(encoding="utf-8")
+              oportunidades = len(re.findall(r"^## OPORTUNIDADE", text, re.M))
+              ctx = re.search(r"Contexto Ibovespa:\*?\*?\s*(.+)", text)
+              preview = (ctx.group(1)[:90] + "…") if ctx else ""
+              items.append({"file": f.name, "oportunidades": oportunidades, "preview": preview})
+          Path("_site/reports.json").write_text(json.dumps(items, ensure_ascii=False))
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build-site
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate latest report prices
+        run: |
+          latest=$(ls -1 reports/*.md 2>/dev/null | sort | tail -1)
+          if [ -z "$latest" ]; then
+            echo "Nenhum relatório — pulando validação."
+            exit 0
+          fi
+          echo "Validando: $latest"
+          python3 scripts/validate_report.py "$latest"
+
+  email:
+    runs-on: ubuntu-latest
+    needs: [build-site, validate]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find latest report
+        id: latest
+        run: |
+          latest=$(ls -1 reports/*.md | sort | tail -1)
+          echo "file=$latest" >> "$GITHUB_OUTPUT"
+          base=$(basename "$latest" .md)
+          y=$(echo "$base" | cut -d- -f1)
+          m=$(echo "$base" | cut -d- -f2)
+          d=$(echo "$base" | cut -d- -f3)
+          hm=$(echo "$base" | cut -d- -f4)
+          n=$(grep -c '^## OPORTUNIDADE' "$latest" || true)
+          h_utc=$((10#${hm:0:2}))
+          m_utc=$((10#${hm:2:2}))
+          brt_total=$(( h_utc * 60 + m_utc - 180 ))
+          if [ $brt_total -lt 0 ]; then brt_total=$(( brt_total + 1440 )); fi
+          brt_h=$(printf "%02d" $(( brt_total / 60 )))
+          brt_m=$(printf "%02d" $(( brt_total % 60 )))
+          if [ "$n" -gt 0 ]; then
+            echo "title=🛒 Mesa B3: $n oportunidade(s) de compra — $d/$m/$y ${brt_h}:${brt_m} BRT" >> "$GITHUB_OUTPUT"
+          else
+            echo "title=Mesa B3: sem oportunidades hoje — $d/$m/$y ${brt_h}:${brt_m} BRT" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Render HTML email
+        run: python3 scripts/render_email.py "${{ steps.latest.outputs.file }}" email.html
+
+      - name: Send email
+        if: ${{ secrets.MAIL_USERNAME != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "${{ steps.latest.outputs.title }}"
+          to: felipescastroo@gmail.com
+          from: Mesa B3 <${{ secrets.MAIL_USERNAME }}>
+          html_body: file://email.html
