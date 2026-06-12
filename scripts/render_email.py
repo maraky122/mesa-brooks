@@ -184,7 +184,12 @@ def render(md: str) -> str:
     if m:
         a, me, d = m.group(1).split("-")
         hora = m.group(2).replace(":", "")
-        data_fmt = f"{d}/{me}/{a} às {hora[:2]}:{hora[2:]} (UTC)"
+        h_utc, min_utc = int(hora[:2]), int(hora[2:])
+        brt_min = h_utc * 60 + min_utc - 180
+        if brt_min < 0:
+            brt_min += 1440
+        brt_h, brt_m = brt_min // 60, brt_min % 60
+        data_fmt = f"{d}/{me}/{a} às {hora[:2]}:{hora[2:]} UTC ({brt_h:02d}:{brt_m:02d} BRT — Brasília)"
 
     contexto_html = render_blocos(sub_header.splitlines())
 

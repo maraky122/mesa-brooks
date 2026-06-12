@@ -87,9 +87,14 @@ function nomesAmigaveis(texto) {
 }
 
 function fmtDate(name) {
-  // 2026-06-11-2334.md → 11/06/2026 23:34 UTC
+  // 2026-06-11-2334.md → 11/06/2026 23:34 UTC (20:34 BRT)
   const m = name.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})/);
-  return m ? `${m[3]}/${m[2]}/${m[1]} ${m[4]}:${m[5]} UTC` : name;
+  if (!m) return name;
+  let brt = parseInt(m[4]) * 60 + parseInt(m[5]) - 180;
+  if (brt < 0) brt += 1440;
+  const bh = String(Math.floor(brt / 60)).padStart(2, '0');
+  const bm = String(brt % 60).padStart(2, '0');
+  return `${m[3]}/${m[2]}/${m[1]} ${m[4]}:${m[5]} UTC (${bh}:${bm} BRT)`;
 }
 
 async function init() {

@@ -74,10 +74,16 @@ jobs:
           d=$(echo "$base" | cut -d- -f3)
           hm=$(echo "$base" | cut -d- -f4)
           sinais=$(grep -c '^## SINAL' "$latest" || true)
+          h_utc=$((10#${hm:0:2}))
+          m_utc=$((10#${hm:2:2}))
+          brt_total=$(( h_utc * 60 + m_utc - 180 ))
+          if [ $brt_total -lt 0 ]; then brt_total=$(( brt_total + 1440 )); fi
+          brt_h=$(printf "%02d" $(( brt_total / 60 )))
+          brt_m=$(printf "%02d" $(( brt_total % 60 )))
           if [ "$sinais" -gt 0 ]; then
-            echo "title=📈 Mesa Brooks: $sinais sinal(is) de operação — $d/$m/$y ${hm:0:2}:${hm:2:2} UTC" >> "$GITHUB_OUTPUT"
+            echo "title=📈 Mesa Brooks: $sinais sinal(is) — $d/$m/$y ${hm:0:2}:${hm:2:2} UTC (${brt_h}:${brt_m} BRT)" >> "$GITHUB_OUTPUT"
           else
-            echo "title=Mesa Brooks: sem operações — $d/$m/$y ${hm:0:2}:${hm:2:2} UTC" >> "$GITHUB_OUTPUT"
+            echo "title=Mesa Brooks: sem operações — $d/$m/$y ${hm:0:2}:${hm:2:2} UTC (${brt_h}:${brt_m} BRT)" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Render HTML email
