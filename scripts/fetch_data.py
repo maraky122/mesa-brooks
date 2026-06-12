@@ -171,9 +171,14 @@ def check_staleness(df: pd.DataFrame, tf: str, ticker: str) -> bool:
             print(f"  [AVISO] {ticker} {tf}: dados velhos ({delta}). Não analisar.")
             return True
         return False
-    if is_cripto and delta > timedelta(hours=2):
-        print(f"  [AVISO] {ticker} {tf}: dados velhos ({delta}). Não analisar.")
-        return True
+    if is_cripto:
+        # Tolerância por timeframe: a última barra FECHADA tem ~1 período de idade.
+        # 1h → toleramos 2h; 4h → toleramos 5h (a barra atual ainda está se formando).
+        tol = {"1h": 2, "4h": 5}.get(tf, 2)
+        if delta > timedelta(hours=tol):
+            print(f"  [AVISO] {ticker} {tf}: dados velhos ({delta}). Não analisar.")
+            return True
+        return False
     # Para ações/futuros: toleramos 1 dia (fechamento do pregão anterior)
     if not is_cripto and tf == "1h" and delta > timedelta(hours=26):
         print(f"  [AVISO] {ticker} {tf}: dados velhos ({delta}). Não analisar.")
