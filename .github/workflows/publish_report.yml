@@ -1,0 +1,86 @@
+name: Publish Report
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "reports/**"
+      - "site/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build static site
+        run: |
+          mkdir -p _site/reports
+          cp site/index.html _site/
+          cp reports/*.md _site/reports/ 2>/dev/null || true
+          # gera reports.json: lista ordenada (mais novo primeiro) com preview e nº de sinais
+          python3 - <<'EOF'
+          import json, re
+          from pathlib import Path
+          items = []
+          for f in sorted(Path("reports").glob("*.md"), reverse=True):
+              text = f.read_text(encoding="utf-8")
+              sinais = len(re.findall(r"^## SINAL", text, re.M))
+              ctx = re.search(r"\*\*Contexto ES=F:\*\* (.+)", text)
+              preview = (ctx.group(1)[:90] + "…") if ctx else ""
+              items.append({"file": f.name, "sinais": sinais, "preview": preview})
+          Path("_site/reports.json").write_text(json.dumps(items, ensure_ascii=False))
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build-site
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  email:
+    runs-on: ubuntu-latest
+    # só roda se os secrets de SMTP estiverem configurados
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find latest report
+        id: latest
+        run: |
+          latest=$(ls -1 reports/*.md | sort | tail -1)
+          echo "file=$latest" >> "$GITHUB_OUTPUT"
+          echo "title=$(head -1 "$latest" | sed 's/^# //')" >> "$GITHUB_OUTPUT"
+
+      - name: Send email
+        if: ${{ env.MAIL_USERNAME != '' }}
+        uses: dawidd6/action-send-mail@v3
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "${{ steps.latest.outputs.title }}"
+          to: felipescastroo@gmail.com
+          from: Mesa Brooks <${{ secrets.MAIL_USERNAME }}>
+          convert_markdown: true
+          html_body: file://${{ steps.latest.outputs.file }}

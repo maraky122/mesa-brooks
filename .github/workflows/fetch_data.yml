@@ -2,10 +2,13 @@ name: Fetch Market Data
 
 on:
   schedule:
-    # Roda às 13:00 UTC (antes da abertura de NY às 13:30)
-    - cron: "0 13 * * 1-5"
-    # Segunda rodada às 21:30 UTC (após fechamento de NY)
-    - cron: "30 21 * * 1-5"
+    # Janelas escolhidas pelas movimentações (UTC, horário de verão NY):
+    - cron: "15 7 * * 1-5"   # pós-abertura de Londres (metais/petróleo/cripto)
+    - cron: "45 12 * * 1-5"  # após indicadores 12:30, antes da NYSE
+    - cron: "0 15 * * 1-5"   # opening range definido; 1º pullback (janela Brooks)
+    - cron: "0 18 * * 1-5"   # tendência da tarde + FOMC
+    - cron: "30 21 * * 1-5"  # fechamento, D1 fechado, journal
+    - cron: "0 13 * * 0,6"   # cobertura de cripto no fim de semana
   workflow_dispatch: # permite rodar manualmente pelo GitHub
 
 jobs:

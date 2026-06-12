@@ -46,4 +46,4 @@ plano:
   saldo_usd: 200
   risco_pct: 1.0      # % do saldo por trade
 
-email_destino: ""     # preencha com seu e-mail para receber relatórios
+email_destino: "felipescastroo@gmail.com"
