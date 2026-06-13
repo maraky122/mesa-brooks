@@ -1,0 +1,82 @@
+ativos:
+  etfs:
+    - ticker: BOVA11.SA
+      nome: iShares Ibovespa
+      classe: etf
+    - ticker: AUVP11.SA
+      nome: AUVP Capital
+      classe: etf
+    - ticker: HASH11.SA
+      nome: Hashdex Cripto (HASH11)
+      classe: etf
+    - ticker: IVVB11.SA
+      nome: iShares S&P 500 BRL
+      classe: etf
+
+  fiis:
+    - ticker: MXRF11.SA
+      nome: Maxi Renda (papel)
+      classe: fii
+    - ticker: HGLG11.SA
+      nome: CSHG Logística
+      classe: fii
+    - ticker: KNRI11.SA
+      nome: Kinea Renda Imobiliária
+      classe: fii
+    - ticker: XPML11.SA
+      nome: XP Malls
+      classe: fii
+    - ticker: BTLG11.SA
+      nome: BTG Logística
+      classe: fii
+
+  bancos:
+    - ticker: ITUB4.SA
+      nome: Itaú Unibanco PN
+      classe: acao
+    - ticker: BBAS3.SA
+      nome: Banco do Brasil ON
+      classe: acao
+    - ticker: BPAC11.SA
+      nome: BTG Pactual Unit
+      classe: acao
+
+  perenes:
+    - ticker: WEGE3.SA
+      nome: WEG ON
+      classe: acao
+    - ticker: ABEV3.SA
+      nome: Ambev ON
+      classe: acao
+    - ticker: EGIE3.SA
+      nome: Engie Brasil ON
+      classe: acao
+    - ticker: TAEE11.SA
+      nome: Taesa Unit
+      classe: acao
+    - ticker: BBSE3.SA
+      nome: BB Seguridade ON
+      classe: acao
+
+contexto_mercado:
+  ticker: ^BVSP
+  nome: Ibovespa
+  fonte: yahoo
+
+timeframes:
+  - 1wk   # W1 — o mapa (tendência primária)
+  - 1d    # D1 — o gatilho (zona de compra)
+
+barras_historico: 260   # ~1 ano de D1 / ~5 anos de W1
+
+plano:
+  aporte_mensal_brl: 1000
+  perfil: acumulacao        # só compras — nunca venda, nunca alavancagem
+  max_oportunidades_por_sessao: 3
+  alocacao_alvo:            # % da carteira no longo prazo
+    fiis: 35
+    etfs: 30
+    bancos: 20
+    perenes: 15
+
+email_destino: "felipescastroo@gmail.com"

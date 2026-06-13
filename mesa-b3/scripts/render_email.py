@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Renderiza o relatório markdown da Mesa Brooks em HTML amigável para e-mail.
+"""Renderiza o relatório markdown da Mesa B3 em HTML amigável para e-mail.
 
 Uso: python scripts/render_email.py <relatorio.md> <saida.html>
 
-- Substitui tickers por nomes amigáveis (GC=F → Ouro, BTCUSDT → Bitcoin...)
-- Converte os cartões (SINAL / SEM TRADE) em blocos visuais com cor
+- Substitui tickers por nomes amigáveis (ITUB4 → Itaú Unibanco...)
+- Converte os cartões (OPORTUNIDADE / AGUARDAR) em blocos visuais com cor
 - Tabelas legíveis em mobile, tudo com CSS inline (compatível com Gmail)
 """
 
@@ -14,15 +14,24 @@ from pathlib import Path
 
 # ── Nomes amigáveis ────────────────────────────────────────────────────────
 NOMES = {
-    "GC=F": "Ouro",
-    "SI=F": "Prata",
-    "CL=F": "Petróleo WTI",
-    "ES=F": "S&P 500 (Futuros)",
-    "BTCUSDT": "Bitcoin",
-    "ETHUSDT": "Ethereum",
-    "SPY": "S&P 500 (ETF SPY)",
-    "QQQ": "Nasdaq (ETF QQQ)",
-    "NVDA": "NVIDIA",
+    "BOVA11": "iShares Ibovespa (BOVA11)",
+    "AUVP11": "AUVP Capital (AUVP11)",
+    "HASH11": "Hashdex Cripto (HASH11)",
+    "IVVB11": "iShares S&P 500 (IVVB11)",
+    "MXRF11": "Maxi Renda (MXRF11)",
+    "HGLG11": "CSHG Logística (HGLG11)",
+    "KNRI11": "Kinea Renda (KNRI11)",
+    "XPML11": "XP Malls (XPML11)",
+    "BTLG11": "BTG Logística (BTLG11)",
+    "ITUB4": "Itaú Unibanco (ITUB4)",
+    "BBAS3": "Banco do Brasil (BBAS3)",
+    "BPAC11": "BTG Pactual (BPAC11)",
+    "WEGE3": "WEG (WEGE3)",
+    "ABEV3": "Ambev (ABEV3)",
+    "EGIE3": "Engie Brasil (EGIE3)",
+    "TAEE11": "Taesa (TAEE11)",
+    "BBSE3": "BB Seguridade (BBSE3)",
+    "^BVSP": "Ibovespa",
 }
 
 TIMEFRAMES = {"1d": "Diário", "4h": "4 horas", "1h": "1 hora",
@@ -110,13 +119,11 @@ def parse_kv(corpo: list[str]) -> tuple[dict, list[str]]:
 
 KV_LABELS = {
     "Setup": "Estratégia",
+    "Qualidade": "Qualidade da zona",
     "Preço atual": "Preço no momento da análise",
-    "Direção": "Direção",
-    "Entrada": "Preço de entrada",
-    "Stop": "Stop (proteção)",
-    "Alvo": "Alvo (objetivo)",
-    "Trader's Equation": "Equação do Trader",
-    "⚠️ Calendário": "⚠️ Alerta de calendário",
+    "Zona de compra": "Zona de compra",
+    "Invalidação": "Invalidação da tese",
+    "Tranche sugerida": "Quanto aportar",
 }
 
 
@@ -161,13 +168,13 @@ def render(md: str) -> str:
     md = substitui_tickers(md)
     linhas = md.splitlines()
 
-    titulo, sub_header = "Mesa Brooks", ""
+    titulo, sub_header = "Mesa B3", ""
     cards = []
 
     # ── separa por seções "## " ───────────────────────────────────────────
     secoes, atual = [], None
     for ln in linhas:
-        if ln.startswith("# ") and titulo == "Mesa Brooks":
+        if ln.startswith("# ") and titulo == "Mesa B3":
             titulo = ln[2:].strip()
             continue
         if ln.startswith("## "):
@@ -199,36 +206,30 @@ def render(md: str) -> str:
     # ── cartões ───────────────────────────────────────────────────────────
     for sec in secoes:
         t = sec["titulo"]
-        if t.upper().startswith("SINAL"):
+        if t.upper().startswith("OPORTUNIDADE"):
             ativo = render_inline(t.split("—", 1)[1].strip()) if "—" in t else t
             kv, resto = parse_kv(sec["corpo"])
-            direcao = kv.get("Direção", "").upper()
-            compra = "COMPRA" in direcao
-            badge = (f'<span style="{S["badge_compra"]}">▲ COMPRA</span>' if compra
-                     else f'<span style="{S["badge_venda"]}">▼ VENDA</span>')
-            estilo_card = S["card_sinal_compra"] if compra else S["card_sinal_venda"]
+            badge = f'<span style="{S["badge_compra"]}">🛒 ZONA DE COMPRA</span>'
             kv_rows = ""
             for chave, valor in kv.items():
-                if chave == "Direção":
-                    continue
                 label = KV_LABELS.get(chave, chave)
                 kv_rows += (f'<tr><td style="{S["kv_key"]}">{label}</td>'
                             f'<td style="{S["kv_val"]}">{render_inline(valor)}</td></tr>')
             cards.append(
-                f'<div style="{estilo_card}">'
-                f'<h2 style="{S["h2"]}">📌 Sinal de operação — {ativo}</h2>'
+                f'<div style="{S["card_sinal_compra"]}">'
+                f'<h2 style="{S["h2"]}">📌 Oportunidade de compra — {ativo}</h2>'
                 f'{badge}'
                 f'<table style="{S["kv_table"]}" cellpadding="0" cellspacing="0">{kv_rows}</table>'
                 f'{render_blocos(resto)}'
                 f'</div>'
             )
-        elif t.upper().startswith("SEM TRADE"):
+        elif t.upper().startswith("AGUARDAR"):
             ativo = render_inline(t.split("—", 1)[1].strip()) if "—" in t else t
             corpo = render_blocos(sec["corpo"])
             cards.append(
                 f'<div style="{S["card_semtrade"]}">'
                 f'<p style="margin:0 0 4px;font-size:15px;color:#1a1f2b;"><strong>{ativo}</strong> '
-                f'<span style="{S["badge_neutro"]}">Sem operação</span></p>'
+                f'<span style="{S["badge_neutro"]}">Aguardar</span></p>'
                 f'<div style="font-size:13px;color:#57606a;">{corpo}</div>'
                 f'</div>'
             )
@@ -246,16 +247,16 @@ def render(md: str) -> str:
 <body style="{S['body']}">
 <div style="{S['wrap']}">
   <div style="{S['header']}">
-    <h1 style="{S['h1']}">Mesa <span style="{S['h1b']}">Brooks</span></h1>
-    <p style="{S['sub']}">Análise de Price Action · {data_fmt}</p>
+    <h1 style="{S['h1']}">Mesa <span style="{S['h1b']}">B3</span></h1>
+    <p style="{S['sub']}">Acumulação · Price Action Brooks · {data_fmt}</p>
   </div>
   <div style="{S['hr_strip']}">&nbsp;</div>
   <div style="{S['card']}">{contexto_html}</div>
   {''.join(cards)}
   <div style="{S['footer']}">
-    Relatório gerado automaticamente pela Mesa Brooks (Fase 1 — paper trading).<br>
+    Relatório gerado automaticamente pela Mesa B3 — carteira de acumulação.<br>
     Este conteúdo é análise técnica educacional, não recomendação de investimento.<br>
-    <a href="https://maraky122.github.io/mesa-brooks" style="color:#d4a017;">Ver todas as análises no site</a>
+    <a href="https://maraky122.github.io/mesa-b3" style="color:#d4a017;">Ver todas as análises no site</a>
   </div>
 </div>
 </body>

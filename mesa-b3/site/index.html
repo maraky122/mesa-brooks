@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0d1117">
-<title>Mesa Brooks</title>
+<title>Mesa B3</title>
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <style>
   :root {
     --bg: #0d1117; --card: #161b22; --border: #30363d;
-    --text: #e6edf3; --muted: #8b949e; --accent: #d4a017;
+    --text: #e6edf3; --muted: #8b949e; --accent: #2ea043;
     --green: #3fb950; --red: #f85149;
   }
   * { box-sizing: border-box; margin: 0; }
@@ -37,9 +37,8 @@
   .report-card .meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
   .badge { display: inline-block; font-size: 12px; font-weight: 600; border-radius: 999px;
     padding: 2px 10px; margin-top: 8px; }
-  .badge.sinal { background: rgba(212,160,23,.15); color: var(--accent); }
-  .badge.semtrade { background: rgba(139,148,158,.15); color: var(--muted); }
-  /* markdown rendering */
+  .badge.oportunidade { background: rgba(46,160,67,.15); color: var(--green); }
+  .badge.aguardar { background: rgba(139,148,158,.15); color: var(--muted); }
   #content { display: none; }
   #content h1 { font-size: 20px; margin: 16px 0 8px; color: var(--accent); }
   #content h2 { font-size: 17px; margin: 20px 0 8px; padding-top: 12px;
@@ -61,7 +60,7 @@
 <body>
 <header>
   <button id="back" onclick="showList()">‹ Voltar</button>
-  <h1>Mesa <span>Brooks</span></h1>
+  <h1>Mesa <span>B3</span></h1>
 </header>
 <main>
   <div id="list"><p class="loading">Carregando relatórios…</p></div>
@@ -73,28 +72,32 @@ const content = document.getElementById('content');
 const back = document.getElementById('back');
 
 const NOMES = {
-  'GC=F': 'Ouro', 'SI=F': 'Prata', 'CL=F': 'Petróleo WTI',
-  'ES=F': 'S&P 500 (Futuros)', 'BTCUSDT': 'Bitcoin', 'ETHUSDT': 'Ethereum',
-  'SPY': 'S&P 500 (ETF SPY)', 'QQQ': 'Nasdaq (ETF QQQ)', 'NVDA': 'NVIDIA'
+  'BOVA11': 'iShares Ibovespa (BOVA11)', 'AUVP11': 'AUVP Capital (AUVP11)',
+  'HASH11': 'Hashdex Cripto (HASH11)', 'IVVB11': 'iShares S&P 500 (IVVB11)',
+  'MXRF11': 'Maxi Renda (MXRF11)', 'HGLG11': 'CSHG Logística (HGLG11)',
+  'KNRI11': 'Kinea Renda (KNRI11)', 'XPML11': 'XP Malls (XPML11)',
+  'BTLG11': 'BTG Logística (BTLG11)', 'ITUB4': 'Itaú Unibanco (ITUB4)',
+  'BBAS3': 'Banco do Brasil (BBAS3)', 'BPAC11': 'BTG Pactual (BPAC11)',
+  'WEGE3': 'WEG (WEGE3)', 'ABEV3': 'Ambev (ABEV3)', 'EGIE3': 'Engie Brasil (EGIE3)',
+  'TAEE11': 'Taesa (TAEE11)', 'BBSE3': 'BB Seguridade (BBSE3)', '^BVSP': 'Ibovespa'
 };
 
 function nomesAmigaveis(texto) {
   for (const [ticker, nome] of Object.entries(NOMES)) {
-    const re = new RegExp('(?<![\\w(])' + ticker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w)])', 'g');
+    const re = new RegExp('(?<![\\w(])' + ticker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w)]| \\()', 'g');
     texto = texto.replace(re, nome);
   }
   return texto;
 }
 
 function fmtDate(name) {
-  // 2026-06-11-2334.md → 11/06/2026 23:34 UTC (20:34 BRT)
   const m = name.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})/);
   if (!m) return name;
   let brt = parseInt(m[4]) * 60 + parseInt(m[5]) - 180;
   if (brt < 0) brt += 1440;
   const bh = String(Math.floor(brt / 60)).padStart(2, '0');
   const bm = String(brt % 60).padStart(2, '0');
-  return `${m[3]}/${m[2]}/${m[1]} ${m[4]}:${m[5]} UTC (${bh}:${bm} BRT)`;
+  return `${m[3]}/${m[2]}/${m[1]} ${bh}:${bm} BRT`;
 }
 
 async function init() {
@@ -105,8 +108,8 @@ async function init() {
       <div class="report-card" onclick="openReport('${r.file}')">
         <div class="date">${fmtDate(r.file)}</div>
         <div class="meta">${nomesAmigaveis(r.preview)}</div>
-        <span class="badge ${r.sinais > 0 ? 'sinal' : 'semtrade'}">
-          ${r.sinais > 0 ? r.sinais + ' SINAL' + (r.sinais > 1 ? 'IS' : '') : 'Sem trade'}
+        <span class="badge ${r.oportunidades > 0 ? 'oportunidade' : 'aguardar'}">
+          ${r.oportunidades > 0 ? '🛒 ' + r.oportunidades + ' OPORTUNIDADE' + (r.oportunidades > 1 ? 'S' : '') : 'Aguardar'}
         </span>
       </div>`).join('');
   } catch (e) {
