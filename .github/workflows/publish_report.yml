@@ -74,7 +74,8 @@ jobs:
   email:
     runs-on: ubuntu-latest
     needs: [build-site, validate]
-    # só roda se os secrets de SMTP estiverem configurados
+    env:
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -107,7 +108,7 @@ jobs:
         run: python3 scripts/render_email.py "${{ steps.latest.outputs.file }}" email.html
 
       - name: Send email
-        if: ${{ secrets.MAIL_USERNAME != '' }}
+        if: ${{ env.MAIL_USERNAME != '' }}
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
