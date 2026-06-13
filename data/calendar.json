@@ -1,7 +1,124 @@
 {
- "status": "indisponível",
- "atualizado_utc": "2026-06-12 14:09",
+ "status": "ok",
+ "atualizado_utc": "2026-06-13 14:55",
  "fonte": "ForexFactory (faireconomy.media)",
- "erro": "API inacessível — sem dados de calendário para esta semana",
- "eventos": []
+ "eventos": [
+  {
+   "evento": "Core CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-10 12:30",
+   "brt": "2026-06-10 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.4%"
+  },
+  {
+   "evento": "Core CPI y/y",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-10 12:30",
+   "brt": "2026-06-10 09:30",
+   "previsao": "2.9%",
+   "anterior": "2.8%"
+  },
+  {
+   "evento": "CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-10 12:30",
+   "brt": "2026-06-10 09:30",
+   "previsao": "0.5%",
+   "anterior": "0.6%"
+  },
+  {
+   "evento": "CPI y/y",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-10 12:30",
+   "brt": "2026-06-10 09:30",
+   "previsao": "4.2%",
+   "anterior": "3.8%"
+  },
+  {
+   "evento": "Main Refinancing Rate",
+   "moeda": "EUR",
+   "impacto": "ALTO",
+   "utc": "2026-06-11 12:15",
+   "brt": "2026-06-11 09:15",
+   "previsao": "2.40%",
+   "anterior": "2.15%"
+  },
+  {
+   "evento": "Monetary Policy Statement",
+   "moeda": "EUR",
+   "impacto": "ALTO",
+   "utc": "2026-06-11 12:15",
+   "brt": "2026-06-11 09:15",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "Core PPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-11 12:30",
+   "brt": "2026-06-11 09:30",
+   "previsao": "0.5%",
+   "anterior": "1.0%"
+  },
+  {
+   "evento": "PPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-11 12:30",
+   "brt": "2026-06-11 09:30",
+   "previsao": "0.7%",
+   "anterior": "1.4%"
+  },
+  {
+   "evento": "Unemployment Claims",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-11 12:30",
+   "brt": "2026-06-11 09:30",
+   "previsao": "220K",
+   "anterior": "225K"
+  },
+  {
+   "evento": "ECB Press Conference",
+   "moeda": "EUR",
+   "impacto": "ALTO",
+   "utc": "2026-06-11 12:45",
+   "brt": "2026-06-11 09:45",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "GDP m/m",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-06-12 06:00",
+   "brt": "2026-06-12 03:00",
+   "previsao": "-0.1%",
+   "anterior": "0.3%"
+  },
+  {
+   "evento": "Prelim UoM Consumer Sentiment",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-12 14:00",
+   "brt": "2026-06-12 11:00",
+   "previsao": "46.1",
+   "anterior": "48.2"
+  },
+  {
+   "evento": "Prelim UoM Inflation Expectations",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-12 14:00",
+   "brt": "2026-06-12 11:00",
+   "previsao": "",
+   "anterior": "4.5%"
+  }
+ ]
 }
