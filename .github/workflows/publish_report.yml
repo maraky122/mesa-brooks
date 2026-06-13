@@ -31,6 +31,8 @@ jobs:
           from pathlib import Path
           items = []
           for f in sorted(Path("reports").glob("*.md"), reverse=True):
+              if f.name.startswith("weekly-review"):
+                  continue
               text = f.read_text(encoding="utf-8")
               sinais = len(re.findall(r"^## SINAL", text, re.M))
               ctx = re.search(r"\*\*Contexto ES=F:\*\* (.+)", text)
@@ -83,9 +85,10 @@ jobs:
       - name: Find latest report
         id: latest
         run: |
-          latest=$(ls -1 reports/*.md | sort | tail -1)
+          latest=$(ls -1 reports/*.md | grep -v weekly-review | sort | tail -1)
           echo "file=$latest" >> "$GITHUB_OUTPUT"
-          base=$(basename "$latest" .md)
+          # assunto amigável: data/hora do nome do arquivo + nº de sinais
+          base=$(basename "$latest" .md)            # ex: 2026-06-11-2334
           y=$(echo "$base" | cut -d- -f1)
           m=$(echo "$base" | cut -d- -f2)
           d=$(echo "$base" | cut -d- -f3)
