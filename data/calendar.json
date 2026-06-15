@@ -1,14 +1,14 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-14 15:31",
+ "atualizado_utc": "2026-06-15 12:37",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
    "evento": "ECB President Lagarde Speaks",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-15 07:15",
-   "brt": "2026-06-15 04:15",
+   "utc": "2026-06-15 07:30",
+   "brt": "2026-06-15 04:30",
    "previsao": "",
    "anterior": ""
   },
@@ -38,6 +38,15 @@
    "brt": "2026-06-17 09:30",
    "previsao": "0.5%",
    "anterior": "0.5%"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-17 13:30",
+   "brt": "2026-06-17 10:30",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "Federal Funds Rate",
