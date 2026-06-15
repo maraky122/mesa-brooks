@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-15 18:59",
+ "atualizado_utc": "2026-06-15 21:09",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -20,6 +20,15 @@
    "brt": "2026-06-17 03:00",
    "previsao": "3.0%",
    "anterior": "2.8%"
+  },
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-17 10:50",
+   "brt": "2026-06-17 07:50",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "Core Retail Sales m/m",
