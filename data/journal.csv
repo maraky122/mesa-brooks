@@ -3,3 +3,4 @@ id,data,ativo,timeframe,setup,direcao,entrada,stop,alvo,r_planejado,r_realizado,
 2,2026-06-11,SI=F,1h,Pullback com Tendência,VENDA,63.985,64.350,63.435,1.5,1.5,sim,alvo atingido 12:00 UTC (L 62.895) antes da reversão em V
 3,2026-06-15,BTCUSDT,1h,Breakout Pullback,COMPRA,66386,65831,67700,2.37,-1.0,sim,stop atingido 02:00 UTC 16/06 (L 65678) apos maxima de 67292 (1.63R) nao confirmar o alvo
 4,2026-06-15,CL=F,1h,L2 com Tendencia,VENDA,80.17,80.62,79.17,2.22,-1.0,sim,stop atingido 15:00 UTC 15/06 (H 80.87); mercado reverteu e caiu forte depois (75.84 em 16/06) mas fora do trade
+5,2026-06-16,CL=F,1h,L2 com Tendência,VENDA,75.81,76.50,74.50,1.90,-1.0,sim,entrada acionada noite 17/06 (H4 00:00 min=74.72); max nao realizado 2.49R (min H4 74.09 04:00 UTC); stop atingido ~14:00 UTC 17/06 quando H4 12:00 atingiu max 79.18 em spike de FOMC em petroleo
