@@ -1,3 +1,3 @@
-Executado: 2026-06-19T22:30:53.532837Z
+Executado: 2026-06-20T14:58:32.590273Z
 Falhas: nenhuma
-Avisos: SPY 1h: dados podem estar desatualizados; QQQ 1h: dados podem estar desatualizados; NVDA 1h: dados podem estar desatualizados
+Avisos: ES=F 1h: dados podem estar desatualizados; SPY 1d: dados podem estar desatualizados; SPY 1h: dados podem estar desatualizados; QQQ 1d: dados podem estar desatualizados; QQQ 1h: dados podem estar desatualizados; NVDA 1d: dados podem estar desatualizados; NVDA 1h: dados podem estar desatualizados; GC=F 1h: dados podem estar desatualizados; SI=F 1h: dados podem estar desatualizados; CL=F 1h: dados podem estar desatualizados
