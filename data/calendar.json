@@ -1,169 +1,142 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-20 20:11",
+ "atualizado_utc": "2026-06-21 15:06",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
    "evento": "ECB President Lagarde Speaks",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-15 07:30",
-   "brt": "2026-06-15 04:30",
+   "utc": "2026-06-22 12:30",
+   "brt": "2026-06-22 09:30",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "CPI y/y",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-06-17 06:00",
-   "brt": "2026-06-17 03:00",
-   "previsao": "3.0%",
-   "anterior": "2.8%"
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
+   "evento": "French Flash Manufacturing PMI",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-17 10:50",
-   "brt": "2026-06-17 07:50",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-06-23 07:15",
+   "brt": "2026-06-23 04:15",
+   "previsao": "50.1",
+   "anterior": "48.9"
   },
   {
-   "evento": "Core Retail Sales m/m",
-   "moeda": "USD",
+   "evento": "French Flash Services PMI",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-17 12:30",
-   "brt": "2026-06-17 09:30",
-   "previsao": "0.6%",
-   "anterior": "0.7%"
+   "utc": "2026-06-23 07:15",
+   "brt": "2026-06-23 04:15",
+   "previsao": "45.7",
+   "anterior": "42.9"
   },
   {
-   "evento": "Retail Sales m/m",
-   "moeda": "USD",
+   "evento": "German Flash Manufacturing PMI",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-17 12:30",
-   "brt": "2026-06-17 09:30",
-   "previsao": "0.5%",
-   "anterior": "0.5%"
+   "utc": "2026-06-23 07:30",
+   "brt": "2026-06-23 04:30",
+   "previsao": "50.2",
+   "anterior": "49.9"
   },
   {
-   "evento": "President Trump Speaks",
-   "moeda": "USD",
+   "evento": "German Flash Services PMI",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-17 14:45",
-   "brt": "2026-06-17 11:45",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-06-23 07:30",
+   "brt": "2026-06-23 04:30",
+   "previsao": "49.0",
+   "anterior": "47.8"
   },
   {
-   "evento": "Federal Funds Rate",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-06-17 18:00",
-   "brt": "2026-06-17 15:00",
-   "previsao": "3.75%",
-   "anterior": "3.75%"
-  },
-  {
-   "evento": "FOMC Economic Projections",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-06-17 18:00",
-   "brt": "2026-06-17 15:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "FOMC Statement",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-06-17 18:00",
-   "brt": "2026-06-17 15:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "FOMC Press Conference",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-06-17 18:30",
-   "brt": "2026-06-17 15:30",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Claimant Count Change",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-06-18 06:00",
-   "brt": "2026-06-18 03:00",
-   "previsao": "25.8K",
-   "anterior": "26.5K"
-  },
-  {
-   "evento": "Average Earnings Index 3m/y",
+   "evento": "Flash Manufacturing PMI",
    "moeda": "GBP",
    "impacto": "MÉDIO",
-   "utc": "2026-06-18 06:00",
-   "brt": "2026-06-18 03:00",
-   "previsao": "4.0%",
-   "anterior": "4.1%"
+   "utc": "2026-06-23 08:30",
+   "brt": "2026-06-23 05:30",
+   "previsao": "53.5",
+   "anterior": "53.7"
   },
   {
-   "evento": "Monetary Policy Summary",
+   "evento": "Flash Services PMI",
    "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-06-18 11:00",
-   "brt": "2026-06-18 08:00",
-   "previsao": "",
-   "anterior": ""
+   "impacto": "MÉDIO",
+   "utc": "2026-06-23 08:30",
+   "brt": "2026-06-23 05:30",
+   "previsao": "50.0",
+   "anterior": "47.9"
   },
   {
-   "evento": "MPC Official Bank Rate Votes",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-06-18 11:00",
-   "brt": "2026-06-18 08:00",
-   "previsao": "1-0-8",
-   "anterior": "1-0-8"
-  },
-  {
-   "evento": "Official Bank Rate",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-06-18 11:00",
-   "brt": "2026-06-18 08:00",
-   "previsao": "3.75%",
-   "anterior": "3.75%"
-  },
-  {
-   "evento": "Philly Fed Manufacturing Index",
+   "evento": "Flash Manufacturing PMI",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-06-18 12:30",
-   "brt": "2026-06-18 09:30",
-   "previsao": "9.8",
-   "anterior": "-0.4"
+   "utc": "2026-06-23 13:45",
+   "brt": "2026-06-23 10:45",
+   "previsao": "54.6",
+   "anterior": "55.3"
+  },
+  {
+   "evento": "Flash Services PMI",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-23 13:45",
+   "brt": "2026-06-23 10:45",
+   "previsao": "51.0",
+   "anterior": "50.9"
+  },
+  {
+   "evento": "Core PCE Price Index m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-25 12:30",
+   "brt": "2026-06-25 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.2%"
+  },
+  {
+   "evento": "Final GDP q/q",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-06-25 12:30",
+   "brt": "2026-06-25 09:30",
+   "previsao": "1.6%",
+   "anterior": "1.6%"
+  },
+  {
+   "evento": "Final GDP Price Index q/q",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-25 12:30",
+   "brt": "2026-06-25 09:30",
+   "previsao": "3.5%",
+   "anterior": "3.5%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-06-18 12:30",
-   "brt": "2026-06-18 09:30",
-   "previsao": "225K",
+   "utc": "2026-06-25 12:30",
+   "brt": "2026-06-25 09:30",
+   "previsao": "226K",
    "anterior": "229K"
   },
   {
-   "evento": "Retail Sales m/m",
-   "moeda": "GBP",
+   "evento": "Revised UoM Consumer Sentiment",
+   "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-06-19 06:00",
-   "brt": "2026-06-19 03:00",
-   "previsao": "0.5%",
-   "anterior": "-1.3%"
+   "utc": "2026-06-26 14:00",
+   "brt": "2026-06-26 11:00",
+   "previsao": "50.0",
+   "anterior": "48.9"
+  },
+  {
+   "evento": "Revised UoM Inflation Expectations",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-26 14:00",
+   "brt": "2026-06-26 11:00",
+   "previsao": "",
+   "anterior": "4.6%"
   }
  ]
 }
