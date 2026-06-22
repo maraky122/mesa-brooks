@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-22 20:53",
+ "atualizado_utc": "2026-06-22 23:01",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -126,8 +126,8 @@
    "impacto": "MÉDIO",
    "utc": "2026-06-25 12:30",
    "brt": "2026-06-25 09:30",
-   "previsao": "226K",
-   "anterior": "229K"
+   "previsao": "225K",
+   "anterior": "226K"
   },
   {
    "evento": "Revised UoM Consumer Sentiment",
