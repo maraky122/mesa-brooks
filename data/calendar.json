@@ -1,14 +1,23 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-21 23:31",
+ "atualizado_utc": "2026-06-22 11:44",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
    "evento": "ECB President Lagarde Speaks",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-06-22 12:30",
-   "brt": "2026-06-22 09:30",
+   "utc": "2026-06-22 13:00",
+   "brt": "2026-06-22 10:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-22 15:25",
+   "brt": "2026-06-22 12:25",
    "previsao": "",
    "anterior": ""
   },
