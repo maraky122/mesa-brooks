@@ -262,9 +262,29 @@ def render(md: str) -> str:
 </html>"""
 
 
+def wrap_html_lines(html: str, max_len: int = 900) -> str:
+    """Quebra linhas longas do HTML após '>' para respeitar o limite RFC 2822 (998 chars).
+    Evita corrupção de e-mail causada por servidores que inserem CRLF em linhas >998 chars."""
+    result = []
+    for line in html.splitlines():
+        while len(line) > max_len:
+            # encontra o último '>' antes do limite para cortar em local seguro
+            cut = line.rfind(">", 0, max_len)
+            if cut == -1:
+                cut = max_len
+            else:
+                cut += 1
+            result.append(line[:cut])
+            line = line[cut:]
+        result.append(line)
+    return "\n".join(result)
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         sys.exit("Uso: render_email.py <relatorio.md> <saida.html>")
     src, dst = Path(sys.argv[1]), Path(sys.argv[2])
-    dst.write_text(render(src.read_text(encoding="utf-8")), encoding="utf-8")
+    html = render(src.read_text(encoding="utf-8"))
+    html = wrap_html_lines(html)
+    dst.write_text(html, encoding="utf-8")
     print(f"OK: {dst} ({dst.stat().st_size} bytes)")

@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-def read_csv_tail(path, n=60):
+def read_csv_tail(path, n=25):
     try:
         lines = Path(path).read_text().strip().split("\n")
         header = lines[0]
@@ -110,7 +110,7 @@ Produza o relatório completo no formato exato definido. Não use markdown de ex
     print("[auto_analysis] chamando API Claude...")
 
     message = client.messages.create(
-        model="claude-opus-4-8",
+        model="claude-sonnet-4-6",
         max_tokens=8192,
         system=system_prompt,
         messages=[{"role": "user", "content": user_message}],
