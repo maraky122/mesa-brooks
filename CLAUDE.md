@@ -177,6 +177,29 @@ Quando o usuário corrigir uma leitura:
 
 ---
 
+## Nomes completos dos ativos (obrigatório nos relatórios)
+
+Em todos os cartões SINAL e SEM TRADE, use o nome completo do ativo — nunca apenas o ticker ou abreviação interna:
+
+| Ticker interno | Nome completo a exibir |
+|---|---|
+| GCF / GC=F | Ouro Futuro (GC=F) |
+| SIF / SI=F | Prata Futuro (SI=F) |
+| CLF / CL=F | Petróleo WTI Futuro (CL=F) |
+| ESF / ES=F | E-mini S&P 500 Futuro (ES=F) |
+| BTCUSDT | Bitcoin / USDT (BTCUSDT) |
+| ETHUSDT | Ethereum / USDT (ETHUSDT) |
+| SPY | SPDR S&P 500 ETF (SPY) |
+| QQQ | Invesco Nasdaq-100 ETF (QQQ) |
+| NVDA | NVIDIA Corp (NVDA) |
+
+Exemplos corretos de cabeçalho de cartão:
+- `## SINAL — Ouro Futuro (GC=F) H1`
+- `## SEM TRADE — Petróleo WTI Futuro (CL=F)`
+- `## SEM TRADE — Bitcoin / USDT (BTCUSDT)`
+
+---
+
 ## Aprendizados
 
-*(seção vazia — será preenchida conforme as sessões evoluem)*
+- **2026-06-23:** Usar sempre nome completo do ativo nos cartões (ex: "Ouro Futuro (GC=F)"), nunca só o ticker ou a abreviação interna (GCF, SIF, CLF).
