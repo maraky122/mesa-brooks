@@ -55,8 +55,14 @@ def parse_sinais(md: str):
     for b in blocos:
         if not b.startswith("SINAL"):
             continue
-        m = re.match(r"SINAL\s*—\s*(\S+)", b)
-        sinal = {"ativo": m.group(1) if m else "?"}
+        # Prefere ticker entre parênteses: "SINAL — Ouro Futuro (GC=F) H1" → "GCF"
+        m_ticker = re.search(r"\(([^)]+)\)", b.split("\n")[0])
+        if m_ticker:
+            ativo = m_ticker.group(1).replace("=", "")
+        else:
+            m = re.match(r"SINAL\s*—\s*(\S+)", b)
+            ativo = m.group(1) if m else "?"
+        sinal = {"ativo": ativo}
         for campo in ("Direção", "Preço atual", "Entrada", "Stop", "Alvo"):
             mm = re.search(rf"\*\*{campo}:\*\*\s*(.+)", b)
             sinal[campo] = mm.group(1).strip() if mm else None
