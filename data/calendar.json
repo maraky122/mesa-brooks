@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-24 10:28",
+ "atualizado_utc": "2026-06-24 15:23",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -99,6 +99,15 @@
    "impacto": "MÉDIO",
    "utc": "2026-06-23 18:05",
    "brt": "2026-06-23 15:05",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-06-25 00:30",
+   "brt": "2026-06-24 21:30",
    "previsao": "",
    "anterior": ""
   },
