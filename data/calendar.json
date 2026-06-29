@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-28 15:08",
+ "atualizado_utc": "2026-06-29 11:53",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -94,6 +94,15 @@
    "anterior": ""
   },
   {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-01 14:00",
+   "brt": "2026-07-01 11:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
    "evento": "ISM Manufacturing PMI",
    "moeda": "USD",
    "impacto": "ALTO",
@@ -110,15 +119,6 @@
    "brt": "2026-07-01 11:00",
    "previsao": "79.0",
    "anterior": "82.1"
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-01 14:30",
-   "brt": "2026-07-01 11:30",
-   "previsao": "",
-   "anterior": ""
   },
   {
    "evento": "Average Hourly Earnings m/m",
