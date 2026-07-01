@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-06-30 22:49",
+ "atualizado_utc": "2026-07-01 10:49",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -119,6 +119,15 @@
    "brt": "2026-07-01 11:00",
    "previsao": "77.7",
    "anterior": "82.1"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-01 19:15",
+   "brt": "2026-07-01 16:15",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "Average Hourly Earnings m/m",
