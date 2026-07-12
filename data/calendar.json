@@ -1,43 +1,160 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-11 14:16",
+ "atualizado_utc": "2026-07-12 14:20",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "ISM Services PMI",
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-14 08:45",
+   "brt": "2026-07-14 05:45",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "Core CPI m/m",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-07-06 14:00",
-   "brt": "2026-07-06 11:00",
-   "previsao": "54.2",
-   "anterior": "54.5"
+   "utc": "2026-07-14 12:30",
+   "brt": "2026-07-14 09:30",
+   "previsao": "0.2%",
+   "anterior": "0.2%"
+  },
+  {
+   "evento": "Core CPI y/y",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-14 12:30",
+   "brt": "2026-07-14 09:30",
+   "previsao": "2.8%",
+   "anterior": "2.9%"
+  },
+  {
+   "evento": "CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-14 12:30",
+   "brt": "2026-07-14 09:30",
+   "previsao": "-0.1%",
+   "anterior": "0.5%"
+  },
+  {
+   "evento": "CPI y/y",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-14 12:30",
+   "brt": "2026-07-14 09:30",
+   "previsao": "3.8%",
+   "anterior": "4.2%"
+  },
+  {
+   "evento": "Fed Chairman Warsh Testifies",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-14 14:00",
+   "brt": "2026-07-14 11:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "BOE Gov Bailey Speaks",
    "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-07 10:30",
-   "brt": "2026-07-07 07:30",
+   "impacto": "ALTO",
+   "utc": "2026-07-14 20:00",
+   "brt": "2026-07-14 17:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "FOMC Meeting Minutes",
+   "evento": "Core PPI m/m",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-07-08 18:00",
-   "brt": "2026-07-08 15:00",
+   "utc": "2026-07-15 12:30",
+   "brt": "2026-07-15 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.4%"
+  },
+  {
+   "evento": "PPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-15 12:30",
+   "brt": "2026-07-15 09:30",
+   "previsao": "0.0%",
+   "anterior": "1.1%"
+  },
+  {
+   "evento": "Fed Chairman Warsh Testifies",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-15 14:00",
+   "brt": "2026-07-15 11:00",
    "previsao": "",
    "anterior": ""
+  },
+  {
+   "evento": "GDP m/m",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-16 06:00",
+   "brt": "2026-07-16 03:00",
+   "previsao": "0.1%",
+   "anterior": "-0.1%"
+  },
+  {
+   "evento": "Core Retail Sales m/m",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-16 12:30",
+   "brt": "2026-07-16 09:30",
+   "previsao": "-0.1%",
+   "anterior": "0.8%"
+  },
+  {
+   "evento": "Philly Fed Manufacturing Index",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-16 12:30",
+   "brt": "2026-07-16 09:30",
+   "previsao": "12.1",
+   "anterior": "10.3"
+  },
+  {
+   "evento": "Retail Sales m/m",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-16 12:30",
+   "brt": "2026-07-16 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.9%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-07-09 12:30",
-   "brt": "2026-07-09 09:30",
-   "previsao": "218K",
+   "utc": "2026-07-16 12:30",
+   "brt": "2026-07-16 09:30",
+   "previsao": "215K",
    "anterior": "215K"
+  },
+  {
+   "evento": "Prelim UoM Consumer Sentiment",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-17 14:00",
+   "brt": "2026-07-17 11:00",
+   "previsao": "51.4",
+   "anterior": "48.9"
+  },
+  {
+   "evento": "Prelim UoM Inflation Expectations",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-17 14:00",
+   "brt": "2026-07-17 11:00",
+   "previsao": "",
+   "anterior": "4.6%"
   }
  ]
 }
