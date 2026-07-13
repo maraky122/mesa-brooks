@@ -1,12 +1,12 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-13 10:35",
+ "atualizado_utc": "2026-07-13 15:34",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
    "evento": "BOE Gov Bailey Speaks",
    "moeda": "GBP",
-   "impacto": "ALTO",
+   "impacto": "MÉDIO",
    "utc": "2026-07-14 08:45",
    "brt": "2026-07-14 05:45",
    "previsao": "",
