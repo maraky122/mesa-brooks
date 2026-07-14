@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-14 16:06",
+ "atualizado_utc": "2026-07-14 19:25",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -72,7 +72,7 @@
    "impacto": "ALTO",
    "utc": "2026-07-15 12:30",
    "brt": "2026-07-15 09:30",
-   "previsao": "0.4%",
+   "previsao": "0.3%",
    "anterior": "0.4%"
   },
   {
@@ -137,6 +137,15 @@
    "brt": "2026-07-16 09:30",
    "previsao": "216K",
    "anterior": "215K"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-17 01:00",
+   "brt": "2026-07-16 22:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "Prelim UoM Consumer Sentiment",
