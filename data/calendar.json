@@ -1,169 +1,133 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-18 14:13",
+ "atualizado_utc": "2026-07-19 14:17",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "BOE Gov Bailey Speaks",
+   "evento": "Claimant Count Change",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-21 06:00",
+   "brt": "2026-07-21 03:00",
+   "previsao": "28.3K",
+   "anterior": "31.2K"
+  },
+  {
+   "evento": "Average Earnings Index 3m/y",
    "moeda": "GBP",
    "impacto": "MÉDIO",
-   "utc": "2026-07-14 08:45",
-   "brt": "2026-07-14 05:45",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Core CPI m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-14 12:30",
-   "brt": "2026-07-14 09:30",
-   "previsao": "0.2%",
-   "anterior": "0.2%"
-  },
-  {
-   "evento": "Core CPI y/y",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-14 12:30",
-   "brt": "2026-07-14 09:30",
-   "previsao": "2.8%",
-   "anterior": "2.9%"
-  },
-  {
-   "evento": "CPI m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-14 12:30",
-   "brt": "2026-07-14 09:30",
-   "previsao": "-0.1%",
-   "anterior": "0.5%"
+   "utc": "2026-07-21 06:00",
+   "brt": "2026-07-21 03:00",
+   "previsao": "4.5%",
+   "anterior": "4.4%"
   },
   {
    "evento": "CPI y/y",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-14 12:30",
-   "brt": "2026-07-14 09:30",
-   "previsao": "3.8%",
-   "anterior": "4.2%"
-  },
-  {
-   "evento": "Fed Chairman Warsh Testifies",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-14 14:00",
-   "brt": "2026-07-14 11:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "BOE Gov Bailey Speaks",
    "moeda": "GBP",
    "impacto": "ALTO",
-   "utc": "2026-07-14 20:00",
-   "brt": "2026-07-14 17:00",
+   "utc": "2026-07-22 06:00",
+   "brt": "2026-07-22 03:00",
+   "previsao": "2.7%",
+   "anterior": "2.8%"
+  },
+  {
+   "evento": "Main Refinancing Rate",
+   "moeda": "EUR",
+   "impacto": "ALTO",
+   "utc": "2026-07-23 12:15",
+   "brt": "2026-07-23 09:15",
+   "previsao": "2.40%",
+   "anterior": "2.40%"
+  },
+  {
+   "evento": "Monetary Policy Statement",
+   "moeda": "EUR",
+   "impacto": "ALTO",
+   "utc": "2026-07-23 12:15",
+   "brt": "2026-07-23 09:15",
    "previsao": "",
    "anterior": ""
-  },
-  {
-   "evento": "Core PPI m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-15 12:30",
-   "brt": "2026-07-15 09:30",
-   "previsao": "0.3%",
-   "anterior": "0.4%"
-  },
-  {
-   "evento": "PPI m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-15 12:30",
-   "brt": "2026-07-15 09:30",
-   "previsao": "0.0%",
-   "anterior": "1.1%"
-  },
-  {
-   "evento": "Fed Chairman Warsh Testifies",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-07-15 14:00",
-   "brt": "2026-07-15 11:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "GDP m/m",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-07-16 06:00",
-   "brt": "2026-07-16 03:00",
-   "previsao": "0.0%",
-   "anterior": "-0.1%"
-  },
-  {
-   "evento": "Core Retail Sales m/m",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-16 12:30",
-   "brt": "2026-07-16 09:30",
-   "previsao": "0.0%",
-   "anterior": "0.8%"
-  },
-  {
-   "evento": "Philly Fed Manufacturing Index",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-16 12:30",
-   "brt": "2026-07-16 09:30",
-   "previsao": "12.7",
-   "anterior": "10.3"
-  },
-  {
-   "evento": "Retail Sales m/m",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-16 12:30",
-   "brt": "2026-07-16 09:30",
-   "previsao": "0.2%",
-   "anterior": "0.9%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-07-16 12:30",
-   "brt": "2026-07-16 09:30",
-   "previsao": "216K",
-   "anterior": "215K"
+   "utc": "2026-07-23 12:30",
+   "brt": "2026-07-23 09:30",
+   "previsao": "211K",
+   "anterior": "208K"
   },
   {
-   "evento": "President Trump Speaks",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-17 01:00",
-   "brt": "2026-07-16 22:00",
+   "evento": "ECB Press Conference",
+   "moeda": "EUR",
+   "impacto": "ALTO",
+   "utc": "2026-07-23 12:45",
+   "brt": "2026-07-23 09:45",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Prelim UoM Consumer Sentiment",
-   "moeda": "USD",
+   "evento": "Retail Sales m/m",
+   "moeda": "GBP",
    "impacto": "MÉDIO",
-   "utc": "2026-07-17 14:00",
-   "brt": "2026-07-17 11:00",
-   "previsao": "51.0",
-   "anterior": "48.9"
+   "utc": "2026-07-24 06:00",
+   "brt": "2026-07-24 03:00",
+   "previsao": "-0.1%",
+   "anterior": "1.2%"
   },
   {
-   "evento": "Prelim UoM Inflation Expectations",
-   "moeda": "USD",
+   "evento": "French Flash Manufacturing PMI",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-07-17 14:00",
-   "brt": "2026-07-17 11:00",
-   "previsao": "",
-   "anterior": "4.6%"
+   "utc": "2026-07-24 07:15",
+   "brt": "2026-07-24 04:15",
+   "previsao": "51.2",
+   "anterior": "50.7"
+  },
+  {
+   "evento": "French Flash Services PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-24 07:15",
+   "brt": "2026-07-24 04:15",
+   "previsao": "47.7",
+   "anterior": "47.4"
+  },
+  {
+   "evento": "German Flash Manufacturing PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-24 07:30",
+   "brt": "2026-07-24 04:30",
+   "previsao": "50.5",
+   "anterior": "50.0"
+  },
+  {
+   "evento": "German Flash Services PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-24 07:30",
+   "brt": "2026-07-24 04:30",
+   "previsao": "49.0",
+   "anterior": "46.8"
+  },
+  {
+   "evento": "Flash Manufacturing PMI",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-24 08:30",
+   "brt": "2026-07-24 05:30",
+   "previsao": "52.1",
+   "anterior": "53.1"
+  },
+  {
+   "evento": "Flash Services PMI",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-24 08:30",
+   "brt": "2026-07-24 05:30",
+   "previsao": "49.4",
+   "anterior": "48.7"
   }
  ]
 }
