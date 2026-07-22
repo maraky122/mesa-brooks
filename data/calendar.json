@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-21 22:26",
+ "atualizado_utc": "2026-07-22 09:38",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -29,6 +29,15 @@
    "brt": "2026-07-22 03:00",
    "previsao": "2.7%",
    "anterior": "2.8%"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-22 19:00",
+   "brt": "2026-07-22 16:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "Main Refinancing Rate",
