@@ -1,151 +1,178 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-25 14:24",
+ "atualizado_utc": "2026-07-26 14:21",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "Claimant Count Change",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-07-21 06:00",
-   "brt": "2026-07-21 03:00",
-   "previsao": "29.4K",
-   "anterior": "31.2K"
-  },
-  {
-   "evento": "Average Earnings Index 3m/y",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-21 06:00",
-   "brt": "2026-07-21 03:00",
-   "previsao": "4.5%",
-   "anterior": "4.4%"
-  },
-  {
-   "evento": "CPI y/y",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-07-22 06:00",
-   "brt": "2026-07-22 03:00",
-   "previsao": "2.7%",
-   "anterior": "2.8%"
-  },
-  {
-   "evento": "President Trump Speaks",
+   "evento": "CB Consumer Confidence",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-07-22 19:00",
-   "brt": "2026-07-22 16:00",
+   "utc": "2026-07-28 14:00",
+   "brt": "2026-07-28 11:00",
+   "previsao": "92.1",
+   "anterior": "91.2"
+  },
+  {
+   "evento": "Federal Funds Rate",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-29 18:00",
+   "brt": "2026-07-29 15:00",
+   "previsao": "3.75%",
+   "anterior": "3.75%"
+  },
+  {
+   "evento": "FOMC Statement",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-29 18:00",
+   "brt": "2026-07-29 15:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Main Refinancing Rate",
-   "moeda": "EUR",
+   "evento": "FOMC Press Conference",
+   "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-07-23 12:15",
-   "brt": "2026-07-23 09:15",
-   "previsao": "2.40%",
-   "anterior": "2.40%"
-  },
-  {
-   "evento": "Monetary Policy Statement",
-   "moeda": "EUR",
-   "impacto": "ALTO",
-   "utc": "2026-07-23 12:15",
-   "brt": "2026-07-23 09:15",
+   "utc": "2026-07-29 18:30",
+   "brt": "2026-07-29 15:30",
    "previsao": "",
    "anterior": ""
+  },
+  {
+   "evento": "German Prelim CPI m/m",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-30 06:29",
+   "brt": "2026-07-30 03:29",
+   "previsao": "0.7%",
+   "anterior": "-0.3%"
+  },
+  {
+   "evento": "German Prelim GDP q/q",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-30 08:00",
+   "brt": "2026-07-30 05:00",
+   "previsao": "0.1%",
+   "anterior": "0.3%"
+  },
+  {
+   "evento": "BOE Monetary Policy Report",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 11:00",
+   "brt": "2026-07-30 08:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "Monetary Policy Summary",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 11:00",
+   "brt": "2026-07-30 08:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "MPC Official Bank Rate Votes",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 11:00",
+   "brt": "2026-07-30 08:00",
+   "previsao": "2-0-7",
+   "anterior": "2-0-7"
+  },
+  {
+   "evento": "Official Bank Rate",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 11:00",
+   "brt": "2026-07-30 08:00",
+   "previsao": "3.75%",
+   "anterior": "3.75%"
+  },
+  {
+   "evento": "Advance GDP q/q",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 12:30",
+   "brt": "2026-07-30 09:30",
+   "previsao": "2.3%",
+   "anterior": "2.0%"
+  },
+  {
+   "evento": "Core PCE Price Index m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 12:30",
+   "brt": "2026-07-30 09:30",
+   "previsao": "0.1%",
+   "anterior": "0.3%"
+  },
+  {
+   "evento": "Advance GDP Price Index q/q",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-30 12:30",
+   "brt": "2026-07-30 09:30",
+   "previsao": "3.7%",
+   "anterior": "3.6%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-07-23 12:30",
-   "brt": "2026-07-23 09:30",
-   "previsao": "211K",
-   "anterior": "208K"
+   "utc": "2026-07-30 12:30",
+   "brt": "2026-07-30 09:30",
+   "previsao": "206K",
+   "anterior": "187K"
   },
   {
-   "evento": "ECB Press Conference",
-   "moeda": "EUR",
-   "impacto": "ALTO",
-   "utc": "2026-07-23 12:45",
-   "brt": "2026-07-23 09:45",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Retail Sales m/m",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-24 06:00",
-   "brt": "2026-07-24 03:00",
-   "previsao": "-0.3%",
-   "anterior": "1.2%"
-  },
-  {
-   "evento": "French Flash Manufacturing PMI",
+   "evento": "Core CPI Flash Estimate y/y",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-07-24 07:15",
-   "brt": "2026-07-24 04:15",
-   "previsao": "51.0",
-   "anterior": "50.7"
+   "utc": "2026-07-31 09:00",
+   "brt": "2026-07-31 06:00",
+   "previsao": "2.4%",
+   "anterior": "2.4%"
   },
   {
-   "evento": "French Flash Services PMI",
+   "evento": "CPI Flash Estimate y/y",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-07-24 07:15",
-   "brt": "2026-07-24 04:15",
-   "previsao": "47.5",
-   "anterior": "47.4"
+   "utc": "2026-07-31 09:00",
+   "brt": "2026-07-31 06:00",
+   "previsao": "2.9%",
+   "anterior": "2.8%"
   },
   {
-   "evento": "German Flash Manufacturing PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-24 07:30",
-   "brt": "2026-07-24 04:30",
-   "previsao": "50.4",
-   "anterior": "50.0"
-  },
-  {
-   "evento": "German Flash Services PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-24 07:30",
-   "brt": "2026-07-24 04:30",
-   "previsao": "49.0",
-   "anterior": "46.8"
-  },
-  {
-   "evento": "Flash Manufacturing PMI",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-24 08:30",
-   "brt": "2026-07-24 05:30",
-   "previsao": "52.0",
-   "anterior": "53.1"
-  },
-  {
-   "evento": "Flash Services PMI",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-07-24 08:30",
-   "brt": "2026-07-24 05:30",
-   "previsao": "49.4",
-   "anterior": "48.7"
-  },
-  {
-   "evento": "President Trump Speaks",
+   "evento": "Employment Cost Index q/q",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-07-25 00:55",
-   "brt": "2026-07-24 21:55",
+   "utc": "2026-07-31 12:30",
+   "brt": "2026-07-31 09:30",
+   "previsao": "0.8%",
+   "anterior": "0.9%"
+  },
+  {
+   "evento": "Revised UoM Consumer Sentiment",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-31 14:00",
+   "brt": "2026-07-31 11:00",
+   "previsao": "54.2",
+   "anterior": "54.4"
+  },
+  {
+   "evento": "Revised UoM Inflation Expectations",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-31 14:00",
+   "brt": "2026-07-31 11:00",
    "previsao": "",
-   "anterior": ""
+   "anterior": "4.2%"
   }
  ]
 }
