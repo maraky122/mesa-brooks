@@ -1,8 +1,17 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-27 15:30",
+ "atualizado_utc": "2026-07-27 16:51",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-07-27 18:50",
+   "brt": "2026-07-27 15:50",
+   "previsao": "",
+   "anterior": ""
+  },
   {
    "evento": "CB Consumer Confidence",
    "moeda": "USD",
