@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-07-27 19:40",
+ "atualizado_utc": "2026-07-27 22:33",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -18,7 +18,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-07-28 14:00",
    "brt": "2026-07-28 11:00",
-   "previsao": "92.1",
+   "previsao": "92.4",
    "anterior": "91.2"
   },
   {
@@ -103,12 +103,21 @@
    "anterior": "3.75%"
   },
   {
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-07-30 11:30",
+   "brt": "2026-07-30 08:30",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
    "evento": "Advance GDP q/q",
    "moeda": "USD",
    "impacto": "ALTO",
    "utc": "2026-07-30 12:30",
    "brt": "2026-07-30 09:30",
-   "previsao": "2.3%",
+   "previsao": "2.0%",
    "anterior": "2.0%"
   },
   {
@@ -117,7 +126,7 @@
    "impacto": "ALTO",
    "utc": "2026-07-30 12:30",
    "brt": "2026-07-30 09:30",
-   "previsao": "0.1%",
+   "previsao": "0.2%",
    "anterior": "0.3%"
   },
   {
@@ -126,7 +135,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-07-30 12:30",
    "brt": "2026-07-30 09:30",
-   "previsao": "3.7%",
+   "previsao": "4.1%",
    "anterior": "3.6%"
   },
   {
@@ -135,7 +144,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-07-30 12:30",
    "brt": "2026-07-30 09:30",
-   "previsao": "206K",
+   "previsao": "201K",
    "anterior": "187K"
   },
   {
@@ -171,7 +180,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-07-31 14:00",
    "brt": "2026-07-31 11:00",
-   "previsao": "54.2",
+   "previsao": "53.9",
    "anterior": "54.4"
   },
   {
