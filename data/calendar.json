@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-08-03 17:03",
+ "atualizado_utc": "2026-08-03 19:43",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -27,7 +27,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-08-04 14:00",
    "brt": "2026-08-04 11:00",
-   "previsao": "7.42M",
+   "previsao": "7.44M",
    "anterior": "7.59M"
   },
   {
@@ -36,7 +36,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-08-05 12:15",
    "brt": "2026-08-05 09:15",
-   "previsao": "71K",
+   "previsao": "68K",
    "anterior": "98K"
   },
   {
@@ -54,7 +54,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-08-06 12:30",
    "brt": "2026-08-06 09:30",
-   "previsao": "205K",
+   "previsao": "203K",
    "anterior": "197K"
   },
   {
@@ -72,7 +72,7 @@
    "impacto": "ALTO",
    "utc": "2026-08-07 12:30",
    "brt": "2026-08-07 09:30",
-   "previsao": "88K",
+   "previsao": "85K",
    "anterior": "57K"
   },
   {
