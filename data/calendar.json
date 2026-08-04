@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-08-04 16:44",
+ "atualizado_utc": "2026-08-04 19:42",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -47,6 +47,15 @@
    "brt": "2026-08-05 11:00",
    "previsao": "54.5",
    "anterior": "54.0"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-08-05 20:30",
+   "brt": "2026-08-05 17:30",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "Unemployment Claims",
