@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-08-18 15:18",
+ "atualizado_utc": "2026-08-18 18:42",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -36,6 +36,15 @@
    "impacto": "MÉDIO",
    "utc": "2026-08-19 07:10",
    "brt": "2026-08-19 04:10",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-08-19 10:15",
+   "brt": "2026-08-19 07:15",
    "previsao": "",
    "anterior": ""
   },
