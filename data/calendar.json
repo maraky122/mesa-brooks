@@ -1,160 +1,97 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-08-22 13:22",
+ "atualizado_utc": "2026-08-23 13:23",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "Claimant Count Change",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-08-18 06:00",
-   "brt": "2026-08-18 03:00",
-   "previsao": "16.5K",
-   "anterior": "6.7K"
-  },
-  {
-   "evento": "Average Earnings Index 3m/y",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-18 06:00",
-   "brt": "2026-08-18 03:00",
-   "previsao": "4.0%",
-   "anterior": "4.3%"
-  },
-  {
-   "evento": "CPI y/y",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-08-19 06:00",
-   "brt": "2026-08-19 03:00",
-   "previsao": "2.9%",
-   "anterior": "2.6%"
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-19 07:10",
-   "brt": "2026-08-19 04:10",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-19 10:15",
-   "brt": "2026-08-19 07:15",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "FOMC Meeting Minutes",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-08-19 18:00",
-   "brt": "2026-08-19 15:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "President Trump Speaks",
+   "evento": "Treasury Sec Bessent Speaks",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-08-19 18:30",
-   "brt": "2026-08-19 15:30",
+   "utc": "2026-08-24 18:00",
+   "brt": "2026-08-24 15:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Philly Fed Manufacturing Index",
+   "evento": "CB Consumer Confidence",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-08-20 12:30",
-   "brt": "2026-08-20 09:30",
-   "previsao": "24.1",
-   "anterior": "41.4"
+   "utc": "2026-08-25 14:00",
+   "brt": "2026-08-25 11:00",
+   "previsao": "90.3",
+   "anterior": "90.8"
+  },
+  {
+   "evento": "Core PCE Price Index m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-08-26 12:30",
+   "brt": "2026-08-26 09:30",
+   "previsao": "0.2%",
+   "anterior": "0.1%"
+  },
+  {
+   "evento": "Prelim GDP q/q",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-08-26 12:30",
+   "brt": "2026-08-26 09:30",
+   "previsao": "1.5%",
+   "anterior": "1.5%"
+  },
+  {
+   "evento": "Prelim GDP Price Index q/q",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-08-26 12:30",
+   "brt": "2026-08-26 09:30",
+   "previsao": "6.2%",
+   "anterior": "6.2%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-08-20 12:30",
-   "brt": "2026-08-20 09:30",
-   "previsao": "210K",
-   "anterior": "209K"
+   "utc": "2026-08-27 12:30",
+   "brt": "2026-08-27 09:30",
+   "previsao": "208K",
+   "anterior": "206K"
   },
   {
-   "evento": "Retail Sales m/m",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 06:00",
-   "brt": "2026-08-21 03:00",
-   "previsao": "-0.5%",
-   "anterior": "1.0%"
-  },
-  {
-   "evento": "French Flash Manufacturing PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 07:15",
-   "brt": "2026-08-21 04:15",
-   "previsao": "50.1",
-   "anterior": "50.0"
-  },
-  {
-   "evento": "French Flash Services PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 07:15",
-   "brt": "2026-08-21 04:15",
-   "previsao": "49.4",
-   "anterior": "49.8"
-  },
-  {
-   "evento": "German Flash Manufacturing PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 07:30",
-   "brt": "2026-08-21 04:30",
-   "previsao": "52.1",
-   "anterior": "52.2"
-  },
-  {
-   "evento": "German Flash Services PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 07:30",
-   "brt": "2026-08-21 04:30",
-   "previsao": "50.1",
-   "anterior": "49.6"
-  },
-  {
-   "evento": "Flash Manufacturing PMI",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 08:30",
-   "brt": "2026-08-21 05:30",
-   "previsao": "51.6",
-   "anterior": "52.8"
-  },
-  {
-   "evento": "Flash Services PMI",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 08:30",
-   "brt": "2026-08-21 05:30",
-   "previsao": "51.8",
-   "anterior": "51.8"
-  },
-  {
-   "evento": "President Trump Speaks",
+   "evento": "Fed Chairman Warsh Speaks",
    "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-21 23:00",
-   "brt": "2026-08-21 20:00",
+   "impacto": "ALTO",
+   "utc": "2026-08-28 14:00",
+   "brt": "2026-08-28 11:00",
    "previsao": "",
    "anterior": ""
+  },
+  {
+   "evento": "Prelim Benchmark Payrolls Revision",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-08-28 14:00",
+   "brt": "2026-08-28 11:00",
+   "previsao": "",
+   "anterior": "-911K"
+  },
+  {
+   "evento": "Revised UoM Consumer Sentiment",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-08-28 14:00",
+   "brt": "2026-08-28 11:00",
+   "previsao": "51.0",
+   "anterior": "51.0"
+  },
+  {
+   "evento": "Revised UoM Inflation Expectations",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-08-28 14:00",
+   "brt": "2026-08-28 11:00",
+   "previsao": "",
+   "anterior": "4.3%"
   }
  ]
 }
