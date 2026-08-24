@@ -1,14 +1,14 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-08-24 15:26",
+ "atualizado_utc": "2026-08-24 18:45",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
    "evento": "Treasury Sec Bessent Speaks",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-08-24 18:00",
-   "brt": "2026-08-24 15:00",
+   "utc": "2026-08-24 17:00",
+   "brt": "2026-08-24 14:00",
    "previsao": "",
    "anterior": ""
   },
