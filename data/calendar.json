@@ -1,97 +1,124 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-08-29 16:54",
+ "atualizado_utc": "2026-08-30 17:01",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "Treasury Sec Bessent Speaks",
-   "moeda": "USD",
+   "evento": "German Prelim CPI m/m",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-08-24 17:00",
-   "brt": "2026-08-24 14:00",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-08-31 06:29",
+   "brt": "2026-08-31 03:29",
+   "previsao": "0.3%",
+   "anterior": "0.8%"
   },
   {
-   "evento": "CB Consumer Confidence",
-   "moeda": "USD",
+   "evento": "Core CPI Flash Estimate y/y",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-08-25 14:00",
-   "brt": "2026-08-25 11:00",
-   "previsao": "90.3",
-   "anterior": "90.8"
+   "utc": "2026-09-01 09:00",
+   "brt": "2026-09-01 06:00",
+   "previsao": "2.5%",
+   "anterior": "2.5%"
   },
   {
-   "evento": "Core PCE Price Index m/m",
+   "evento": "CPI Flash Estimate y/y",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-01 09:00",
+   "brt": "2026-09-01 06:00",
+   "previsao": "3.3%",
+   "anterior": "2.9%"
+  },
+  {
+   "evento": "ISM Manufacturing PMI",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-08-26 12:30",
-   "brt": "2026-08-26 09:30",
-   "previsao": "0.2%",
-   "anterior": "0.1%"
+   "utc": "2026-09-01 14:00",
+   "brt": "2026-09-01 11:00",
+   "previsao": "55.2",
+   "anterior": "55.6"
   },
   {
-   "evento": "Prelim GDP q/q",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-08-26 12:30",
-   "brt": "2026-08-26 09:30",
-   "previsao": "1.5%",
-   "anterior": "1.5%"
-  },
-  {
-   "evento": "Prelim GDP Price Index q/q",
+   "evento": "ISM Manufacturing Prices",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-08-26 12:30",
-   "brt": "2026-08-26 09:30",
-   "previsao": "6.2%",
-   "anterior": "6.2%"
+   "utc": "2026-09-01 14:00",
+   "brt": "2026-09-01 11:00",
+   "previsao": "71.2",
+   "anterior": "71.1"
+  },
+  {
+   "evento": "JOLTS Job Openings",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-01 14:00",
+   "brt": "2026-09-01 11:00",
+   "previsao": "7.33M",
+   "anterior": "7.36M"
+  },
+  {
+   "evento": "ADP Non-Farm Employment Change",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-02 12:15",
+   "brt": "2026-09-02 09:15",
+   "previsao": "47K",
+   "anterior": "44K"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-08-27 12:30",
-   "brt": "2026-08-27 09:30",
-   "previsao": "208K",
-   "anterior": "206K"
+   "utc": "2026-09-03 12:30",
+   "brt": "2026-09-03 09:30",
+   "previsao": "205K",
+   "anterior": "203K"
   },
   {
-   "evento": "Fed Chairman Warsh Speaks",
+   "evento": "ISM Services PMI",
    "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-03 14:00",
+   "brt": "2026-09-03 11:00",
+   "previsao": "54.1",
+   "anterior": "54.1"
+  },
+  {
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
    "impacto": "ALTO",
-   "utc": "2026-08-28 14:00",
-   "brt": "2026-08-28 11:00",
+   "utc": "2026-09-04 08:50",
+   "brt": "2026-09-04 05:50",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Prelim Benchmark Payrolls Revision",
+   "evento": "Average Hourly Earnings m/m",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-08-28 14:00",
-   "brt": "2026-08-28 11:00",
-   "previsao": "",
-   "anterior": "-911K"
+   "utc": "2026-09-04 12:30",
+   "brt": "2026-09-04 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.1%"
   },
   {
-   "evento": "Revised UoM Consumer Sentiment",
+   "evento": "Non-Farm Employment Change",
    "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-28 14:00",
-   "brt": "2026-08-28 11:00",
-   "previsao": "51.0",
-   "anterior": "51.0"
+   "impacto": "ALTO",
+   "utc": "2026-09-04 12:30",
+   "brt": "2026-09-04 09:30",
+   "previsao": "58K",
+   "anterior": "-23K"
   },
   {
-   "evento": "Revised UoM Inflation Expectations",
+   "evento": "Unemployment Rate",
    "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-08-28 14:00",
-   "brt": "2026-08-28 11:00",
-   "previsao": "",
-   "anterior": "4.3%"
+   "impacto": "ALTO",
+   "utc": "2026-09-04 12:30",
+   "brt": "2026-09-04 09:30",
+   "previsao": "4.1%",
+   "anterior": "4.1%"
   }
  ]
 }
