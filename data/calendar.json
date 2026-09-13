@@ -1,160 +1,142 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-12 15:54",
+ "atualizado_utc": "2026-09-13 16:41",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "Monetary Policy Report Hearings",
+   "evento": "Claimant Count Change",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-09-15 06:00",
+   "brt": "2026-09-15 03:00",
+   "previsao": "8.3K",
+   "anterior": "-11.0K"
+  },
+  {
+   "evento": "Average Earnings Index 3m/y",
    "moeda": "GBP",
    "impacto": "MÉDIO",
-   "utc": "2026-09-08 13:15",
-   "brt": "2026-09-08 10:15",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-09-15 06:00",
+   "brt": "2026-09-15 03:00",
+   "previsao": "3.9%",
+   "anterior": "4.1%"
   },
   {
-   "evento": "President Trump Speaks",
+   "evento": "CPI y/y",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-09-16 06:00",
+   "brt": "2026-09-16 03:00",
+   "previsao": "3.1%",
+   "anterior": "2.9%"
+  },
+  {
+   "evento": "Core Retail Sales m/m",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-09-10 01:15",
-   "brt": "2026-09-09 22:15",
+   "utc": "2026-09-16 12:30",
+   "brt": "2026-09-16 09:30",
+   "previsao": "0.5%",
+   "anterior": "-0.3%"
+  },
+  {
+   "evento": "Retail Sales m/m",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-16 12:30",
+   "brt": "2026-09-16 09:30",
+   "previsao": "0.8%",
+   "anterior": "-0.6%"
+  },
+  {
+   "evento": "Federal Funds Rate",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-09-16 18:00",
+   "brt": "2026-09-16 15:00",
+   "previsao": "",
+   "anterior": "3.75%"
+  },
+  {
+   "evento": "FOMC Economic Projections",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-09-16 18:00",
+   "brt": "2026-09-16 15:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Main Refinancing Rate",
-   "moeda": "EUR",
+   "evento": "FOMC Statement",
+   "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-09-10 12:15",
-   "brt": "2026-09-10 09:15",
-   "previsao": "2.65%",
-   "anterior": "2.40%"
-  },
-  {
-   "evento": "Monetary Policy Statement",
-   "moeda": "EUR",
-   "impacto": "ALTO",
-   "utc": "2026-09-10 12:15",
-   "brt": "2026-09-10 09:15",
+   "utc": "2026-09-16 18:00",
+   "brt": "2026-09-16 15:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Core PPI m/m",
+   "evento": "FOMC Press Conference",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-09-10 12:30",
-   "brt": "2026-09-10 09:30",
-   "previsao": "0.3%",
-   "anterior": "0.2%"
+   "utc": "2026-09-16 18:30",
+   "brt": "2026-09-16 15:30",
+   "previsao": "",
+   "anterior": ""
   },
   {
-   "evento": "PPI m/m",
-   "moeda": "USD",
+   "evento": "Monetary Policy Summary",
+   "moeda": "GBP",
    "impacto": "ALTO",
-   "utc": "2026-09-10 12:30",
-   "brt": "2026-09-10 09:30",
-   "previsao": "0.4%",
-   "anterior": "0.0%"
+   "utc": "2026-09-17 11:00",
+   "brt": "2026-09-17 08:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "MPC Official Bank Rate Votes",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-09-17 11:00",
+   "brt": "2026-09-17 08:00",
+   "previsao": "3-0-6",
+   "anterior": "3-0-6"
+  },
+  {
+   "evento": "Official Bank Rate",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-09-17 11:00",
+   "brt": "2026-09-17 08:00",
+   "previsao": "3.75%",
+   "anterior": "3.75%"
+  },
+  {
+   "evento": "Philly Fed Manufacturing Index",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-17 12:30",
+   "brt": "2026-09-17 09:30",
+   "previsao": "28.9",
+   "anterior": "47.4"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-09-10 12:30",
-   "brt": "2026-09-10 09:30",
-   "previsao": "205K",
+   "utc": "2026-09-17 12:30",
+   "brt": "2026-09-17 09:30",
+   "previsao": "209K",
    "anterior": "206K"
   },
   {
-   "evento": "ECB Press Conference",
-   "moeda": "EUR",
-   "impacto": "ALTO",
-   "utc": "2026-09-10 12:45",
-   "brt": "2026-09-10 09:45",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "GDP m/m",
+   "evento": "Retail Sales m/m",
    "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-09-11 06:00",
-   "brt": "2026-09-11 03:00",
-   "previsao": "0.0%",
-   "anterior": "0.3%"
-  },
-  {
-   "evento": "Core CPI m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-09-11 12:30",
-   "brt": "2026-09-11 09:30",
-   "previsao": "0.2%",
-   "anterior": "0.2%"
-  },
-  {
-   "evento": "Core CPI y/y",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-09-11 12:30",
-   "brt": "2026-09-11 09:30",
-   "previsao": "2.4%",
-   "anterior": "2.5%"
-  },
-  {
-   "evento": "CPI m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-09-11 12:30",
-   "brt": "2026-09-11 09:30",
-   "previsao": "0.4%",
-   "anterior": "0.1%"
-  },
-  {
-   "evento": "CPI y/y",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-09-11 12:30",
-   "brt": "2026-09-11 09:30",
-   "previsao": "3.4%",
-   "anterior": "3.4%"
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-09-11 14:00",
-   "brt": "2026-09-11 11:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Prelim UoM Consumer Sentiment",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-11 14:00",
-   "brt": "2026-09-11 11:00",
-   "previsao": "51.0",
-   "anterior": "51.0"
-  },
-  {
-   "evento": "Prelim UoM Inflation Expectations",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-11 14:00",
-   "brt": "2026-09-11 11:00",
-   "previsao": "",
-   "anterior": "4.3%"
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-12 08:00",
-   "brt": "2026-09-12 05:00",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-09-18 06:00",
+   "brt": "2026-09-18 03:00",
+   "previsao": "-0.2%",
+   "anterior": "-0.5%"
   }
  ]
 }
