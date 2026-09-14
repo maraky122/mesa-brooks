@@ -1,8 +1,17 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-13 17:06",
+ "atualizado_utc": "2026-09-14 14:02",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-14 15:15",
+   "brt": "2026-09-14 12:15",
+   "previsao": "",
+   "anterior": ""
+  },
   {
    "evento": "Claimant Count Change",
    "moeda": "GBP",
@@ -54,7 +63,7 @@
    "impacto": "ALTO",
    "utc": "2026-09-16 18:00",
    "brt": "2026-09-16 15:00",
-   "previsao": "",
+   "previsao": "4.00%",
    "anterior": "3.75%"
   },
   {
@@ -137,6 +146,15 @@
    "brt": "2026-09-18 03:00",
    "previsao": "-0.2%",
    "anterior": "-0.5%"
+  },
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-18 10:30",
+   "brt": "2026-09-18 07:30",
+   "previsao": "",
+   "anterior": ""
   }
  ]
 }
