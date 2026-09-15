@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-15 12:40",
+ "atualizado_utc": "2026-09-15 17:16",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -29,6 +29,15 @@
    "brt": "2026-09-15 03:00",
    "previsao": "3.9%",
    "anterior": "4.1%"
+  },
+  {
+   "evento": "Treasury Sec Bessent Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-15 14:00",
+   "brt": "2026-09-15 11:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "CPI y/y",
