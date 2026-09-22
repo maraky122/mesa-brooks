@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-22 00:12",
+ "atualizado_utc": "2026-09-22 12:36",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -18,6 +18,15 @@
    "impacto": "MÉDIO",
    "utc": "2026-09-22 11:00",
    "brt": "2026-09-22 08:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-22 13:55",
+   "brt": "2026-09-22 10:55",
    "previsao": "",
    "anterior": ""
   },
