@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-24 12:43",
+ "atualizado_utc": "2026-09-24 17:33",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -92,6 +92,15 @@
    "brt": "2026-09-24 09:30",
    "previsao": "201K",
    "anterior": "196K"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-24 14:15",
+   "brt": "2026-09-24 11:15",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "BOE Gov Bailey Speaks",
