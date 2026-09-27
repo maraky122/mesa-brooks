@@ -1,14 +1,14 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-26 16:48",
+ "atualizado_utc": "2026-09-27 17:20",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
    "evento": "ECB President Lagarde Speaks",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-09-21 15:00",
-   "brt": "2026-09-21 12:00",
+   "utc": "2026-09-28 13:30",
+   "brt": "2026-09-28 10:30",
    "previsao": "",
    "anterior": ""
   },
@@ -16,127 +16,163 @@
    "evento": "ECB President Lagarde Speaks",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-09-22 11:00",
-   "brt": "2026-09-22 08:00",
+   "utc": "2026-09-29 11:00",
+   "brt": "2026-09-29 08:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "President Trump Speaks",
+   "evento": "CB Consumer Confidence",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-09-22 13:55",
-   "brt": "2026-09-22 10:55",
+   "utc": "2026-09-29 14:00",
+   "brt": "2026-09-29 11:00",
+   "previsao": "90.1",
+   "anterior": "89.4"
+  },
+  {
+   "evento": "JOLTS Job Openings",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-29 14:00",
+   "brt": "2026-09-29 11:00",
+   "previsao": "7.23M",
+   "anterior": "7.27M"
+  },
+  {
+   "evento": "German Prelim CPI m/m",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-30 06:29",
+   "brt": "2026-09-30 03:29",
+   "previsao": "0.5%",
+   "anterior": "0.2%"
+  },
+  {
+   "evento": "ADP Non-Farm Employment Change",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-30 12:15",
+   "brt": "2026-09-30 09:15",
+   "previsao": "70K",
+   "anterior": "38K"
+  },
+  {
+   "evento": "Core PCE Price Index m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-09-30 12:30",
+   "brt": "2026-09-30 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.2%"
+  },
+  {
+   "evento": "Final GDP q/q",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-09-30 12:30",
+   "brt": "2026-09-30 09:30",
+   "previsao": "1.5%",
+   "anterior": "1.5%"
+  },
+  {
+   "evento": "Final GDP Price Index q/q",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-30 12:30",
+   "brt": "2026-09-30 09:30",
+   "previsao": "6.4%",
+   "anterior": "6.4%"
+  },
+  {
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-01 08:00",
+   "brt": "2026-10-01 05:00",
    "previsao": "",
    "anterior": ""
-  },
-  {
-   "evento": "French Flash Manufacturing PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-23 07:15",
-   "brt": "2026-09-23 04:15",
-   "previsao": "50.9",
-   "anterior": "51.5"
-  },
-  {
-   "evento": "French Flash Services PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-23 07:15",
-   "brt": "2026-09-23 04:15",
-   "previsao": "48.3",
-   "anterior": "48.4"
-  },
-  {
-   "evento": "German Flash Manufacturing PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-23 07:30",
-   "brt": "2026-09-23 04:30",
-   "previsao": "54.1",
-   "anterior": "54.1"
-  },
-  {
-   "evento": "German Flash Services PMI",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-23 07:30",
-   "brt": "2026-09-23 04:30",
-   "previsao": "49.9",
-   "anterior": "48.5"
-  },
-  {
-   "evento": "Flash Manufacturing PMI",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-23 08:30",
-   "brt": "2026-09-23 05:30",
-   "previsao": "51.5",
-   "anterior": "51.5"
-  },
-  {
-   "evento": "Flash Services PMI",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-23 08:30",
-   "brt": "2026-09-23 05:30",
-   "previsao": "52.0",
-   "anterior": "52.8"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-09-24 12:30",
-   "brt": "2026-09-24 09:30",
-   "previsao": "201K",
-   "anterior": "196K"
+   "utc": "2026-10-01 12:30",
+   "brt": "2026-10-01 09:30",
+   "previsao": "199K",
+   "anterior": "197K"
   },
   {
-   "evento": "President Trump Speaks",
-   "moeda": "USD",
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-09-24 14:15",
-   "brt": "2026-09-24 11:15",
+   "utc": "2026-10-01 13:30",
+   "brt": "2026-10-01 10:30",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "President Trump Speaks",
+   "evento": "FOMC Member Waller Speaks",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-09-24 23:55",
-   "brt": "2026-09-24 20:55",
+   "utc": "2026-10-01 14:00",
+   "brt": "2026-10-01 11:00",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "BOE Gov Bailey Speaks",
-   "moeda": "GBP",
+   "evento": "ISM Manufacturing PMI",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-01 14:00",
+   "brt": "2026-10-01 11:00",
+   "previsao": "55.0",
+   "anterior": "54.6"
+  },
+  {
+   "evento": "Core CPI Flash Estimate y/y",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-02 09:00",
+   "brt": "2026-10-02 06:00",
+   "previsao": "2.5%",
+   "anterior": "2.4%"
+  },
+  {
+   "evento": "CPI Flash Estimate y/y",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-02 09:00",
+   "brt": "2026-10-02 06:00",
+   "previsao": "3.7%",
+   "anterior": "3.3%"
+  },
+  {
+   "evento": "Average Hourly Earnings m/m",
+   "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-09-25 09:15",
-   "brt": "2026-09-25 06:15",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-10-02 12:30",
+   "brt": "2026-10-02 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.3%"
   },
   {
-   "evento": "Revised UoM Consumer Sentiment",
+   "evento": "Non-Farm Employment Change",
    "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-25 14:00",
-   "brt": "2026-09-25 11:00",
-   "previsao": "47.4",
-   "anterior": "47.8"
+   "impacto": "ALTO",
+   "utc": "2026-10-02 12:30",
+   "brt": "2026-10-02 09:30",
+   "previsao": "98K",
+   "anterior": "162K"
   },
   {
-   "evento": "Revised UoM Inflation Expectations",
+   "evento": "Unemployment Rate",
    "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-09-25 14:00",
-   "brt": "2026-09-25 11:00",
-   "previsao": "",
-   "anterior": "4.6%"
+   "impacto": "ALTO",
+   "utc": "2026-10-02 12:30",
+   "brt": "2026-10-02 09:30",
+   "previsao": "4.1%",
+   "anterior": "4.1%"
   }
  ]
 }
