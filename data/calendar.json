@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-09-30 00:38",
+ "atualizado_utc": "2026-09-30 13:42",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -83,6 +83,24 @@
    "brt": "2026-09-30 09:30",
    "previsao": "6.4%",
    "anterior": "6.4%"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-30 19:30",
+   "brt": "2026-09-30 16:30",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "FOMC Member Kashkari Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-09-30 22:00",
+   "brt": "2026-09-30 19:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "BOE Gov Bailey Speaks",
