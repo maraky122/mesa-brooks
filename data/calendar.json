@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-10-07 00:53",
+ "atualizado_utc": "2026-10-07 14:29",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -11,6 +11,15 @@
    "brt": "2026-10-05 11:00",
    "previsao": "55.1",
    "anterior": "55.4"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-07 17:00",
+   "brt": "2026-10-07 14:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "FOMC Meeting Minutes",
