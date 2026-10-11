@@ -1,79 +1,169 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-10-10 17:30",
+ "atualizado_utc": "2026-10-11 17:49",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "ISM Services PMI",
-   "moeda": "USD",
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-10-05 14:00",
-   "brt": "2026-10-05 11:00",
-   "previsao": "55.1",
-   "anterior": "55.4"
-  },
-  {
-   "evento": "President Trump Speaks",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-10-07 17:00",
-   "brt": "2026-10-07 14:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "FOMC Meeting Minutes",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-10-07 18:00",
-   "brt": "2026-10-07 15:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "FOMC Member Waller Speaks",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-10-08 08:30",
-   "brt": "2026-10-08 05:30",
+   "utc": "2026-10-14 02:10",
+   "brt": "2026-10-13 23:10",
    "previsao": "",
    "anterior": ""
   },
   {
    "evento": "BOE Gov Bailey Speaks",
    "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-10-08 12:15",
-   "brt": "2026-10-08 09:15",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-14 05:30",
+   "brt": "2026-10-14 02:30",
    "previsao": "",
    "anterior": ""
+  },
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-14 08:30",
+   "brt": "2026-10-14 05:30",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "Core CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-14 12:30",
+   "brt": "2026-10-14 09:30",
+   "previsao": "0.2%",
+   "anterior": "0.3%"
+  },
+  {
+   "evento": "Core CPI y/y",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-14 12:30",
+   "brt": "2026-10-14 09:30",
+   "previsao": "2.5%",
+   "anterior": "2.4%"
+  },
+  {
+   "evento": "CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-14 12:30",
+   "brt": "2026-10-14 09:30",
+   "previsao": "0.6%",
+   "anterior": "0.4%"
+  },
+  {
+   "evento": "CPI y/y",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-14 12:30",
+   "brt": "2026-10-14 09:30",
+   "previsao": "3.6%",
+   "anterior": "3.4%"
+  },
+  {
+   "evento": "GDP m/m",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-10-15 06:00",
+   "brt": "2026-10-15 03:00",
+   "previsao": "-0.1%",
+   "anterior": "0.4%"
+  },
+  {
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-15 07:30",
+   "brt": "2026-10-15 04:30",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "Core PPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-15 12:30",
+   "brt": "2026-10-15 09:30",
+   "previsao": "0.3%",
+   "anterior": "0.2%"
+  },
+  {
+   "evento": "Core Retail Sales m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-15 12:30",
+   "brt": "2026-10-15 09:30",
+   "previsao": "0.5%",
+   "anterior": "1.4%"
+  },
+  {
+   "evento": "PPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-15 12:30",
+   "brt": "2026-10-15 09:30",
+   "previsao": "0.5%",
+   "anterior": "0.4%"
+  },
+  {
+   "evento": "Retail Sales m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-10-15 12:30",
+   "brt": "2026-10-15 09:30",
+   "previsao": "0.3%",
+   "anterior": "1.2%"
+  },
+  {
+   "evento": "Philly Fed Manufacturing Index",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-15 12:30",
+   "brt": "2026-10-15 09:30",
+   "previsao": "26.5",
+   "anterior": "37.8"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-10-08 12:30",
-   "brt": "2026-10-08 09:30",
-   "previsao": "200K",
+   "utc": "2026-10-15 12:30",
+   "brt": "2026-10-15 09:30",
+   "previsao": "195K",
    "anterior": "197K"
   },
   {
-   "evento": "Prelim UoM Consumer Sentiment",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-10-09 14:00",
-   "brt": "2026-10-09 11:00",
-   "previsao": "47.5",
-   "anterior": "47.8"
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-10-16 02:00",
+   "brt": "2026-10-15 23:00",
+   "previsao": "",
+   "anterior": ""
   },
   {
-   "evento": "Prelim UoM Inflation Expectations",
+   "evento": "Fed Chairman Warsh Speaks",
    "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-10-09 14:00",
-   "brt": "2026-10-09 11:00",
+   "impacto": "ALTO",
+   "utc": "2026-10-16 03:30",
+   "brt": "2026-10-16 00:30",
    "previsao": "",
-   "anterior": "4.6%"
+   "anterior": ""
+  },
+  {
+   "evento": "BOE Gov Bailey Speaks",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-17 06:45",
+   "brt": "2026-10-17 03:45",
+   "previsao": "",
+   "anterior": ""
   }
  ]
 }
