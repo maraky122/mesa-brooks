@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-10-13 02:39",
+ "atualizado_utc": "2026-10-13 15:02",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -27,6 +27,15 @@
    "impacto": "MÉDIO",
    "utc": "2026-10-14 08:30",
    "brt": "2026-10-14 05:30",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "EU Economic Summit",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-14 10:15",
+   "brt": "2026-10-14 07:15",
    "previsao": "",
    "anterior": ""
   },
@@ -81,6 +90,15 @@
    "impacto": "MÉDIO",
    "utc": "2026-10-15 07:30",
    "brt": "2026-10-15 04:30",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "EU Economic Summit",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-10-15 10:15",
+   "brt": "2026-10-15 07:15",
    "previsao": "",
    "anterior": ""
   },
