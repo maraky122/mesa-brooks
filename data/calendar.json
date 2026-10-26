@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-10-26 20:12",
+ "atualizado_utc": "2026-10-26 22:27",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -81,7 +81,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-10-29 12:30",
    "brt": "2026-10-29 09:30",
-   "previsao": "3.5%",
+   "previsao": "3.3%",
    "anterior": "6.2%"
   },
   {
@@ -124,8 +124,8 @@
    "evento": "German Prelim CPI m/m",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-10-30 06:29",
-   "brt": "2026-10-30 03:29",
+   "utc": "2026-10-30 07:29",
+   "brt": "2026-10-30 04:29",
    "previsao": "0.1%",
    "anterior": "0.6%"
   },
