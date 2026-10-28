@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-10-28 00:37",
+ "atualizado_utc": "2026-10-28 14:00",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -81,7 +81,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-10-29 12:30",
    "brt": "2026-10-29 09:30",
-   "previsao": "3.3%",
+   "previsao": "3.2%",
    "anterior": "6.2%"
   },
   {
