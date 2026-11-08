@@ -1,169 +1,97 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-07 17:53",
+ "atualizado_utc": "2026-11-08 18:07",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "ISM Manufacturing PMI",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-02 15:00",
-   "brt": "2026-11-02 12:00",
-   "previsao": "54.5",
-   "anterior": "54.5"
-  },
-  {
-   "evento": "JOLTS Job Openings",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-03 15:00",
-   "brt": "2026-11-03 12:00",
-   "previsao": "7.15M",
-   "anterior": "7.08M"
-  },
-  {
-   "evento": "Congressional Elections",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-11-03 15:16",
-   "brt": "2026-11-03 12:16",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Core CPI Flash Estimate y/y",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-04 10:00",
-   "brt": "2026-11-04 07:00",
-   "previsao": "2.5%",
-   "anterior": "2.5%"
-  },
-  {
-   "evento": "CPI Flash Estimate y/y",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-04 10:00",
-   "brt": "2026-11-04 07:00",
-   "previsao": "4.0%",
-   "anterior": "3.8%"
-  },
-  {
-   "evento": "ISM Services PMI",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-04 15:00",
-   "brt": "2026-11-04 12:00",
-   "previsao": "54.8",
-   "anterior": "54.9"
-  },
-  {
-   "evento": "BOE Monetary Policy Report",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-05 12:00",
-   "brt": "2026-11-05 09:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Monetary Policy Summary",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-05 12:00",
-   "brt": "2026-11-05 09:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "MPC Official Bank Rate Votes",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-05 12:00",
-   "brt": "2026-11-05 09:00",
-   "previsao": "7-0-2",
-   "anterior": "3-0-6"
-  },
-  {
-   "evento": "Official Bank Rate",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-05 12:00",
-   "brt": "2026-11-05 09:00",
-   "previsao": "4.00%",
-   "anterior": "3.75%"
-  },
-  {
    "evento": "BOE Gov Bailey Speaks",
    "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-05 12:30",
-   "brt": "2026-11-05 09:30",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-09 17:25",
+   "brt": "2026-11-09 14:25",
    "previsao": "",
    "anterior": ""
+  },
+  {
+   "evento": "FOMC Member Waller Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-10 09:00",
+   "brt": "2026-11-10 06:00",
+   "previsao": "",
+   "anterior": ""
+  },
+  {
+   "evento": "Core CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-11-10 13:30",
+   "brt": "2026-11-10 10:30",
+   "previsao": "0.2%",
+   "anterior": "0.3%"
+  },
+  {
+   "evento": "CPI m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-11-10 13:30",
+   "brt": "2026-11-10 10:30",
+   "previsao": "0.3%",
+   "anterior": "0.6%"
+  },
+  {
+   "evento": "GDP m/m",
+   "moeda": "GBP",
+   "impacto": "ALTO",
+   "utc": "2026-11-12 07:00",
+   "brt": "2026-11-12 04:00",
+   "previsao": "0.0%",
+   "anterior": "0.1%"
+  },
+  {
+   "evento": "Prelim GDP q/q",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-12 07:00",
+   "brt": "2026-11-12 04:00",
+   "previsao": "0.7%",
+   "anterior": "0.5%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-11-05 13:30",
-   "brt": "2026-11-05 10:30",
-   "previsao": "197K",
-   "anterior": "194K"
+   "utc": "2026-11-12 13:30",
+   "brt": "2026-11-12 10:30",
+   "previsao": "194K",
+   "anterior": "189K"
   },
   {
    "evento": "ECB President Lagarde Speaks",
    "moeda": "EUR",
    "impacto": "MÉDIO",
-   "utc": "2026-11-05 18:00",
-   "brt": "2026-11-05 15:00",
+   "utc": "2026-11-12 19:30",
+   "brt": "2026-11-12 16:30",
    "previsao": "",
    "anterior": ""
   },
   {
-   "evento": "Average Hourly Earnings m/m",
+   "evento": "Core PPI m/m",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-11-06 13:30",
-   "brt": "2026-11-06 10:30",
+   "utc": "2026-11-13 13:30",
+   "brt": "2026-11-13 10:30",
    "previsao": "0.3%",
-   "anterior": "0.1%"
+   "anterior": "0.7%"
   },
   {
-   "evento": "Non-Farm Employment Change",
+   "evento": "PPI m/m",
    "moeda": "USD",
    "impacto": "ALTO",
-   "utc": "2026-11-06 13:30",
-   "brt": "2026-11-06 10:30",
-   "previsao": "65K",
-   "anterior": "29K"
-  },
-  {
-   "evento": "Unemployment Rate",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-11-06 13:30",
-   "brt": "2026-11-06 10:30",
-   "previsao": "4.2%",
-   "anterior": "4.2%"
-  },
-  {
-   "evento": "Prelim UoM Consumer Sentiment",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-06 15:00",
-   "brt": "2026-11-06 12:00",
-   "previsao": "48.1",
-   "anterior": "46.3"
-  },
-  {
-   "evento": "Prelim UoM Inflation Expectations",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-06 15:00",
-   "brt": "2026-11-06 12:00",
-   "previsao": "",
-   "anterior": "4.7%"
+   "utc": "2026-11-13 13:30",
+   "brt": "2026-11-13 10:30",
+   "previsao": "0.4%",
+   "anterior": "1.3%"
   }
  ]
 }
