@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-09 17:28",
+ "atualizado_utc": "2026-11-09 22:42",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -38,6 +38,15 @@
    "brt": "2026-11-10 10:30",
    "previsao": "0.3%",
    "anterior": "0.6%"
+  },
+  {
+   "evento": "ECB President Lagarde Speaks",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-11 09:45",
+   "brt": "2026-11-11 06:45",
+   "previsao": "",
+   "anterior": ""
   },
   {
    "evento": "GDP m/m",
