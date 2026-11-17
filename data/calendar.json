@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-17 21:20",
+ "atualizado_utc": "2026-11-17 22:42",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -108,7 +108,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-11-19 13:30",
    "brt": "2026-11-19 10:30",
-   "previsao": "19.2",
+   "previsao": "20.6",
    "anterior": "20.9"
   },
   {
@@ -117,7 +117,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-11-19 13:30",
    "brt": "2026-11-19 10:30",
-   "previsao": "199K",
+   "previsao": "198K",
    "anterior": "200K"
   },
   {
@@ -144,7 +144,7 @@
    "impacto": "MÉDIO",
    "utc": "2026-11-20 15:00",
    "brt": "2026-11-20 12:00",
-   "previsao": "52.1",
+   "previsao": "51.7",
    "anterior": "51.0"
   },
   {
