@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-20 02:28",
+ "atualizado_utc": "2026-11-20 16:08",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -155,6 +155,15 @@
    "brt": "2026-11-20 12:00",
    "previsao": "",
    "anterior": "4.3%"
+  },
+  {
+   "evento": "President Trump Speaks",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-20 17:00",
+   "brt": "2026-11-20 14:00",
+   "previsao": "",
+   "anterior": ""
   }
  ]
 }
