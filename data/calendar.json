@@ -1,169 +1,124 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-21 19:51",
+ "atualizado_utc": "2026-11-22 20:00",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
-   "evento": "Fed Chairman Warsh Speaks",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-11-16 17:00",
-   "brt": "2026-11-16 14:00",
-   "previsao": "",
-   "anterior": ""
+   "evento": "French Flash Manufacturing PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 08:15",
+   "brt": "2026-11-23 05:15",
+   "previsao": "49.8",
+   "anterior": "49.3"
   },
   {
-   "evento": "Average Earnings Index 3m/y",
+   "evento": "French Flash Services PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 08:15",
+   "brt": "2026-11-23 05:15",
+   "previsao": "47.4",
+   "anterior": "48.4"
+  },
+  {
+   "evento": "German Flash Manufacturing PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 08:30",
+   "brt": "2026-11-23 05:30",
+   "previsao": "54.1",
+   "anterior": "54.2"
+  },
+  {
+   "evento": "German Flash Services PMI",
+   "moeda": "EUR",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 08:30",
+   "brt": "2026-11-23 05:30",
+   "previsao": "52.4",
+   "anterior": "51.7"
+  },
+  {
+   "evento": "Flash Manufacturing PMI",
    "moeda": "GBP",
    "impacto": "MÉDIO",
-   "utc": "2026-11-17 07:00",
-   "brt": "2026-11-17 04:00",
+   "utc": "2026-11-23 09:30",
+   "brt": "2026-11-23 06:30",
+   "previsao": "53.0",
+   "anterior": "52.8"
+  },
+  {
+   "evento": "Flash Services PMI",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 09:30",
+   "brt": "2026-11-23 06:30",
+   "previsao": "53.0",
+   "anterior": "53.1"
+  },
+  {
+   "evento": "Flash Manufacturing PMI",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 14:45",
+   "brt": "2026-11-23 11:45",
+   "previsao": "54.5",
+   "anterior": "56.0"
+  },
+  {
+   "evento": "Flash Services PMI",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-23 14:45",
+   "brt": "2026-11-23 11:45",
+   "previsao": "55.6",
+   "anterior": "57.9"
+  },
+  {
+   "evento": "CB Consumer Confidence",
+   "moeda": "USD",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-24 15:00",
+   "brt": "2026-11-24 12:00",
+   "previsao": "92.1",
+   "anterior": "91.7"
+  },
+  {
+   "evento": "Core PCE Price Index m/m",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-11-25 13:30",
+   "brt": "2026-11-25 10:30",
+   "previsao": "0.3%",
+   "anterior": "0.3%"
+  },
+  {
+   "evento": "Prelim GDP q/q",
+   "moeda": "USD",
+   "impacto": "ALTO",
+   "utc": "2026-11-25 13:30",
+   "brt": "2026-11-25 10:30",
    "previsao": "3.5%",
-   "anterior": "3.7%"
+   "anterior": "3.4%"
   },
   {
-   "evento": "Core Retail Sales m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-11-17 13:30",
-   "brt": "2026-11-17 10:30",
-   "previsao": "0.4%",
-   "anterior": "0.9%"
-  },
-  {
-   "evento": "Retail Sales m/m",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-11-17 13:30",
-   "brt": "2026-11-17 10:30",
-   "previsao": "0.1%",
-   "anterior": "0.8%"
-  },
-  {
-   "evento": "CPI y/y",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-18 07:00",
-   "brt": "2026-11-18 04:00",
-   "previsao": "3.6%",
-   "anterior": "3.5%"
-  },
-  {
-   "evento": "BOE Gov Bailey Speaks",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-18 07:30",
-   "brt": "2026-11-18 04:30",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "ECB Financial Stability Review",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-18 09:00",
-   "brt": "2026-11-18 06:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-18 14:25",
-   "brt": "2026-11-18 11:25",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "BOE Gov Bailey Speaks",
-   "moeda": "GBP",
-   "impacto": "ALTO",
-   "utc": "2026-11-18 15:00",
-   "brt": "2026-11-18 12:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "FOMC Meeting Minutes",
-   "moeda": "USD",
-   "impacto": "ALTO",
-   "utc": "2026-11-18 19:00",
-   "brt": "2026-11-18 16:00",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-19 13:30",
-   "brt": "2026-11-19 10:30",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Philly Fed Manufacturing Index",
+   "evento": "Prelim GDP Price Index q/q",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-11-19 13:30",
-   "brt": "2026-11-19 10:30",
-   "previsao": "20.6",
-   "anterior": "20.9"
+   "utc": "2026-11-25 13:30",
+   "brt": "2026-11-25 10:30",
+   "previsao": "2.3%",
+   "anterior": "2.3%"
   },
   {
    "evento": "Unemployment Claims",
    "moeda": "USD",
    "impacto": "MÉDIO",
-   "utc": "2026-11-19 13:30",
-   "brt": "2026-11-19 10:30",
-   "previsao": "198K",
-   "anterior": "200K"
-  },
-  {
-   "evento": "Retail Sales m/m",
-   "moeda": "GBP",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-20 07:00",
-   "brt": "2026-11-20 04:00",
-   "previsao": "0.0%",
-   "anterior": "-0.4%"
-  },
-  {
-   "evento": "ECB President Lagarde Speaks",
-   "moeda": "EUR",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-20 08:15",
-   "brt": "2026-11-20 05:15",
-   "previsao": "",
-   "anterior": ""
-  },
-  {
-   "evento": "Revised UoM Consumer Sentiment",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-20 15:00",
-   "brt": "2026-11-20 12:00",
-   "previsao": "51.7",
-   "anterior": "51.0"
-  },
-  {
-   "evento": "Revised UoM Inflation Expectations",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-20 15:00",
-   "brt": "2026-11-20 12:00",
-   "previsao": "",
-   "anterior": "4.3%"
-  },
-  {
-   "evento": "President Trump Speaks",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-20 17:00",
-   "brt": "2026-11-20 14:00",
-   "previsao": "",
-   "anterior": ""
+   "utc": "2026-11-25 13:30",
+   "brt": "2026-11-25 10:30",
+   "previsao": "201K",
+   "anterior": "203K"
   }
  ]
 }
