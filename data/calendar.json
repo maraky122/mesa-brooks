@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-22 20:30",
+ "atualizado_utc": "2026-11-23 19:14",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -110,15 +110,6 @@
    "brt": "2026-11-25 10:30",
    "previsao": "2.3%",
    "anterior": "2.3%"
-  },
-  {
-   "evento": "Unemployment Claims",
-   "moeda": "USD",
-   "impacto": "MÉDIO",
-   "utc": "2026-11-25 13:30",
-   "brt": "2026-11-25 10:30",
-   "previsao": "201K",
-   "anterior": "203K"
   }
  ]
 }
