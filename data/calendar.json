@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "atualizado_utc": "2026-11-25 04:26",
+ "atualizado_utc": "2026-11-25 17:57",
  "fonte": "ForexFactory (faireconomy.media)",
  "eventos": [
   {
@@ -110,6 +110,15 @@
    "brt": "2026-11-25 10:30",
    "previsao": "2.3%",
    "anterior": "2.3%"
+  },
+  {
+   "evento": "Monetary Policy Report Hearings",
+   "moeda": "GBP",
+   "impacto": "MÉDIO",
+   "utc": "2026-11-25 14:15",
+   "brt": "2026-11-25 11:15",
+   "previsao": "",
+   "anterior": ""
   }
  ]
 }
